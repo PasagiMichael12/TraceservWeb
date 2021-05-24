@@ -4,6 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "autoprefixer": "^10.2.5",
     "jquery": "^3.6.0",
     "postcss": "^8.3.0",
@@ -14,7 +15,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tailwindcss-cli@latest build ./src/styles.css -o ./public/tailwind.css",
-    "dev": "npm run development"  
+    "dev": "npm run development"
   },
   "keywords": [],
   "author": "",
