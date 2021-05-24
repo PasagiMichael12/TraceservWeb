@@ -7,172 +7,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
   <!-- Navbar + hero -->
-  <section class="w-full">
-    <div class="flex relative z-10 pt-10 px-56">
+  <nav>
+    <div class="flex relative pt-10 px-56 ">
       <div class="imageContainer w-1/2 ">
-        <img class="h-14" src="asset/img/traceserv.png" alt="">
+        <img class="w-1/3" src="assets/images/icon/traceserv.png" alt="">
       </div>
-      <div class="svgContainer absolute right-0 top-0 z-0 mx-auto">
-        <svg height="800" overflow="visible" viewBox="0 0 856 610" width="1100" xmlns="http://www.w3.org/2000/svg">
-          <g>
-            <defs>
-              <path id="path-1621576930622308"
-                d="M511 5 C511 5 909 525 932 553 C955 581 999 645 1089 568 C1179 491 1363 322 1363 322 C1363 322 1363 -5 1363 -5 C1363 -5 507 0 507 0 C507 0 511 5 511 5 Z">
-              </path>
-              <linearGradient id="gradient-1621576930637310" x1="50%" y1="100%" x2="50%" y2="0%">
-                <stop offset="0%" stop-color="rgb(100,38,171)" stop-opacity="1"></stop>
-                <stop offset="100%" stop-color="rgb(114,118,232)" stop-opacity="1"></stop>
-              </linearGradient>
-            </defs>
-            <path
-              d="M4 10 C4 10 402 530 425 558 C448 586 492 650 582 573 C672 496 856 327 856 327 C856 327 856 0 856 0 C856 0 0 5 0 5 C0 5 4 10 4 10 Z"
-              style="stroke: rgb(140, 140, 140); stroke-width: 0; stroke-linecap: butt; stroke-linejoin: miter; fill: url(&quot;#gradient-1621576930637310&quot;);">
-            </path>
-          </g>
-        </svg>
+      <div class="svgContainer absolute right-0 top-0 z-0 mx-auto w-8/12 xxs:invisible">
+        <img src="assets/images/svg/heroSvg.svg" alt="svghero">
       </div>
-      <div class="w-1/2 text-white font-semibold flex flex-1 z-10 text-lg items-center justify-around">
+      <div class="w-1/2 text-white font-bold flex flex-1 z-50 text-lg items-center justify-around">
         <a href="#">Home</a>
-        <a href="#">About us</a>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="relative inline-block text-left">
+          <div class="sm:space-x-28">
+            <a href="#" class="hover:text-yellow-300 menu-item" id="menu-button" aria-expanded="true"
+              aria-haspopup="true">
+              About us
+            </a>
+          </div>
+          <div
+            class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none invisible menu"
+            id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-0">Brief History</a>
+              <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-1">Core Values</a>
+              <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-2">Foundation</a>
+              <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-3">Vision</a>
+              <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-4">Mission</a>
+            </div>
+          </div>
+        </div>
+        <!--dropdown-->
         <a href="#">Services</a>
         <a href="#">Community</a>
         <a href="#">Careers</a>
       </div>
     </div>
-    <div class="flex mt-20 px-56">
-      <div class="w-1/2 pt-10">
-        <h1 class="text-indigo-500 font-black text-3xl">Technology Radical And <br> Customer Excellence Services </h1>
-        <p class="text-gray-700 text-sm italic pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Aliquam at
-          porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-        <button class="bg-indigo-500 hover:bg-blue-700 text-white text-sm h-8 w-40 mt-6 rounded">
-          Business Info Cycle
+  </nav>
+  <!---->
+
+  <section class="w-full">
+    <div class="flex xxs:flex-col xxs:space-y-12 xxs:mx-4 xxs:px-0 mt-20 px-56 xxs:text-center">
+      <div class="w-1/2 xxs:w-full xxs:py-auto pt-10">
+        <h1 class="text-primary font-extrabold text-4xl font-roboto xxs:text-black">Technology Radical And <br>
+          Customer
+          Excellence
+          Services </h1>
+        <div class="w-8/12 xxs:w-full">
+          <p class="text-base italic pt-2 text-justify xxs:text-center">Lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing
+            elit.
+            Aliquam at
+            porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+        </div>
+        <button class="text-white mt-8">
+          <div
+            class="buttonContainer bg-primary hover:bg-blue-600 w-44 p-3 rounded flex items-center justify-center text-sm ">
+            Business Info Cycle
+          </div>
         </button>
       </div>
-      <div class="w-1/2 z-10">
-        <img src="asset/img/navbar/banner.png" alt="" class="object-fill w-full">
+      <div class="w-1/2 xxs:w-full xxs:px-12 xxs:w-full z-10 flex justify-end items-center">
+        <div class="w-10/12 xxs:w-full">
+          <img src="assets/images/navbar/banner.png" alt="" class="object-fill w-full">
+        </div>
       </div>
     </div>
   </section>
+
+
+
+
+
+
   <!-- About Us -->
-  <section class="w-full mx-auto py-64 px-56">
-    <div class="flex">
+  <section class="w-full mx-auto xxs:py-6 xxs:px-6 py-64 px-56">
+    <div class="flex xxs:flex-col space-x-16">
       <!-- column 1 start -->
-      <div class="w-1/2">
-        <div class="bg-purple-500 w-40 p-1 font-bold flex justify-center tracking-wide">
-          <h3 class="text-white text-2xl py-1 uppercase tracking-widest">About us</h3>
+      <div class="w-1/2 xxs:w-full">
+        <div class="bg-primary w-40 p-1 font-bold flex mb-4 justify-center tracking-wide">
+          <h3 class="text-white text-xl items-center uppercase tracking-widest">About us</h3>
         </div>
-        <h1 class="font-medium text-purple-600 capitalize italic text-3xl pt-3 pb-16"> Our Brief history and core Values
+        <h1 class="font-bold text-primary capitalize italic text-3xl mb-8"> Our Brief history and core Values
         </h1>
         <!--item 1 start-->
-        <div class="items pb-12 ">
-          <div class="wrapper flex items-center space-x-4 ">
-            <svg height="35.00000000000023" overflow="visible" viewBox="0 0 34.9999999999998  35.00000000000023"
-              width="34.9999999999998" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <defs>
-                  <path id="path-162131667623491"
-                    d="M0 0 C0 0 28.170731707317366 0 28.170731707317366 0 C28.170731707317366 0 28.170731707317366 28.170731707316882 28.170731707317366 28.170731707316882 C28.170731707317366 28.170731707316882 0 28.170731707316882 0 28.170731707316882 C0 28.170731707316882 0 0 0 0 Z">
-                  </path>
-                </defs>
-                <path
-                  d="M6.425053597385414 34.882706960846576 C6.425053597385414 34.882706960846576 2.5240625565390644 6.983380914777058 2.5240625565390644 6.983380914777058 C2.5240625565390644 6.983380914777058 30.423388602608128 3.082389873930765 30.423388602608128 3.082389873930765 C30.423388602608128 3.082389873930765 34.32437964345448 30.981715920000283 34.32437964345448 30.981715920000283 C34.32437964345448 30.981715920000283 6.425053597385414 34.882706960846576 6.425053597385414 34.882706960846576 Z"
-                  style="
-                  stroke: rgb(209, 222, 255);
-                  stroke-width: 1;
-                  stroke-linecap: butt;
-                  stroke-linejoin: miter;
-                  fill: rgb(209, 222, 255);
-                "></path>
-              </g>
-              <g>
-                <defs>
-                  <path id="path-162131667623389"
-                    d="M0 0 C0 0 26.54355950764224 0 26.54355950764224 0 C26.54355950764224 0 26.54355950764224 26.543559507641262 26.54355950764224 26.543559507641262 C26.54355950764224 26.543559507641262 0 26.543559507641262 0 26.543559507641262 C0 26.543559507641262 0 0 0 0 Z">
-                  </path>
-                </defs>
-                <path
-                  d="M24.284561567843042 0 C24.284561567843042 0 34.9999999999998 24.28456156784398 34.9999999999998 24.28456156784398 C34.9999999999998 24.28456156784398 10.715438432156759 35.00000000000034 10.715438432156759 35.00000000000034 C10.715438432156759 35.00000000000034 0 10.715438432156361 0 10.715438432156361 C0 10.715438432156361 24.284561567843042 0 24.284561567843042 0 Z"
-                  style="
-                  stroke: rgb(114, 118, 232);
-                  stroke-width: 1;
-                  stroke-linecap: butt;
-                  stroke-linejoin: round;
-                  fill: rgb(114, 118, 232);
-                "></path>
-              </g>
-            </svg>
-            <h6 class="text-2xl text-purple-500 font-bold tracking-wide capitalize">Brief history</h6>
+        <div class="items pb-6">
+          <div class="wrapper flex items-center space-x-4">
+            <img src="assets/images/about/aboutBox.svg" alt="">
+            <h6 class="text-base text-primary font-bold tracking-wide capitalize">Brief history</h6>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora perferendis modi similique alias
-            dolore, ut reprehenderit distinctio ratione numquam accusamus, cum incidunt voluptatibus repudiandae ipsam
-            laudantium quo ea. Voluptas! <span class="text-purple-600 font-extrabold"><a href="">See More...</a></span>
+          <div>
+            <p class="text-justify text-xs text-gray-700">We trace our beginnings from year 2009 as a collaboration of
+              technology of
+              Technology
+              Professionals joined
+              together by a shared mission of helping small offices both public and privately owned, who does not have
+              the
+              capability to evaluate and organize their internal IT department to enable and operate their IT
+              requirements
+              and resources. <span class="text-primary font-bold"><button id="seeMore" type="button" href="">See
+                  more...</button></span>
+          </div>
+          <p class="par2 hidden text-justify text-xs text-gray-700 mt-4">For the past years the group is
+            successfuly
+            serving
+            offices
+            of diverse nature such as Contact Centers,
+            Law Firms, Accounting Firms, Freight Forwarding Business and Government Offices and aquired
+            different
+            international Standard and Technology Certification and Expertise such as ISO, CMMI, ITIL, Six
+            Sigma,
+            Cisco, Microsoft, Linux and otherswhich enables us to passionately serve with excellence. <span
+              class="text-primary font-bold"><button id="seeLess" type="button" href="">See less...</button></span></p>
           </p>
         </div>
         <!-- item 1 end-->
 
-        <div class="items">
+        <div class=" items">
           <div class="wrapper flex items-center space-x-4 ">
-            <svg height="35.00000000000023" overflow="visible" viewBox="0 0 34.9999999999998  35.00000000000023"
-              width="34.9999999999998" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <defs>
-                  <path id="path-162131667623491"
-                    d="M0 0 C0 0 28.170731707317366 0 28.170731707317366 0 C28.170731707317366 0 28.170731707317366 28.170731707316882 28.170731707317366 28.170731707316882 C28.170731707317366 28.170731707316882 0 28.170731707316882 0 28.170731707316882 C0 28.170731707316882 0 0 0 0 Z">
-                  </path>
-                </defs>
-                <path
-                  d="M6.425053597385414 34.882706960846576 C6.425053597385414 34.882706960846576 2.5240625565390644 6.983380914777058 2.5240625565390644 6.983380914777058 C2.5240625565390644 6.983380914777058 30.423388602608128 3.082389873930765 30.423388602608128 3.082389873930765 C30.423388602608128 3.082389873930765 34.32437964345448 30.981715920000283 34.32437964345448 30.981715920000283 C34.32437964345448 30.981715920000283 6.425053597385414 34.882706960846576 6.425053597385414 34.882706960846576 Z"
-                  style="
-                    stroke: rgb(209, 222, 255);
-                    stroke-width: 1;
-                    stroke-linecap: butt;
-                    stroke-linejoin: miter;
-                    fill: rgb(209, 222, 255);
-                  "></path>
-              </g>
-              <g>
-                <defs>
-                  <path id="path-162131667623389"
-                    d="M0 0 C0 0 26.54355950764224 0 26.54355950764224 0 C26.54355950764224 0 26.54355950764224 26.543559507641262 26.54355950764224 26.543559507641262 C26.54355950764224 26.543559507641262 0 26.543559507641262 0 26.543559507641262 C0 26.543559507641262 0 0 0 0 Z">
-                  </path>
-                </defs>
-                <path
-                  d="M24.284561567843042 0 C24.284561567843042 0 34.9999999999998 24.28456156784398 34.9999999999998 24.28456156784398 C34.9999999999998 24.28456156784398 10.715438432156759 35.00000000000034 10.715438432156759 35.00000000000034 C10.715438432156759 35.00000000000034 0 10.715438432156361 0 10.715438432156361 C0 10.715438432156361 24.284561567843042 0 24.284561567843042 0 Z"
-                  style="
-                    stroke: rgb(114, 118, 232);
-                    stroke-width: 1;
-                    stroke-linecap: butt;
-                    stroke-linejoin: round;
-                    fill: rgb(114, 118, 232);
-                  "></path>
-              </g>
-            </svg>
-            <h6 class="text-2xl text-purple-500 font-bold tracking-wide capitalize">Brief history</h6>
+            <img src="assets/images/about/aboutBox.svg" alt="">
+            <h6 class="text-base text-primary font-bold tracking-wide capitalize">Core Values</h6>
           </div>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora perferendis modi similique alias
-            dolore, ut reprehenderit distinctio ratione numquam accusamus, cum incidunt voluptatibus repudiandae ipsam
-            laudantium quo ea. Voluptas!</p>
+          <p class="text-justify text-xs text-gray-700">Our customers are the Reason of Our Existence, Our
+            Employees and
+            Partners
+            Keeps Us
+            Moving and Our Leader
+            Inspire Us on the Right Direction, with Aligned Objective We can Yield the Best Output for
+            Everyone.</p>
         </div>
       </div>
       <!-- column 1 end-->
       <!-- columend 2 start -->
-      <div class="w-1/2 justify-center flex items-center">
-        <div class="aboutImageContainer flex w-4/5 items-center justify-center">
-          <div class="wrapper">
-            <img src="asset/img/about/img1.png" alt="">
-          </div>
-        </div>
+      <div class="w-1/2 z-10 flex justify-end items-center">
+        <img src="assets/images/about/about.png" alt="" class="object-contain w-full h-full">
       </div>
+
     </div>
     </div>
 
