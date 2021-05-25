@@ -11,19 +11,18 @@
 
 <body>
   <!-- Navbar + hero -->
-  <nav>
-    <div class="flex relative pt-10 px-56 ">
-      <div class="imageContainer w-1/2 ">
-        <img class="w-1/3" src="assets/images/icon/traceserv.png" alt="">
+  <!-- || right side for responsive-->
+  <nav class="">
+    <div class="firsthalf relative flex px-56 py-4 || responsive space for code">
+      <div class="w-1/2 || ">
+        <div class="traceservIconContainer w-full items-center">
+          <img class="w-3/12" src="assets/images/icon/traceserv.png" alt="TraceservIcon">
+        </div>
       </div>
-      <div class="svgContainer absolute right-0 top-0 z-0 mx-auto w-8/12 xxs:invisible">
-        <img src="assets/images/svg/heroSvg.svg" alt="svghero">
-      </div>
-      <div class="w-1/2 text-white font-bold flex flex-1 z-50 text-lg items-center justify-around">
-        <a href="#">Home</a>
-        <!-- This example requires Tailwind CSS v2.0+ -->
+      <div class="w-1/2 links flex font-bold text-white z-50 items-center justify-between ">
+        <a class="" href="#">Home</a>
         <div class="relative inline-block text-left">
-          <div class="sm:space-x-28">
+          <div class="">
             <a href="#" class="hover:text-yellow-300 menu-item" id="menu-button" aria-expanded="true"
               aria-haspopup="true">
               About us
@@ -46,24 +45,25 @@
             </div>
           </div>
         </div>
-        <!--dropdown-->
-        <a href="#">Services</a>
-        <a href="#">Community</a>
-        <a href="#">Careers</a>
+        <a class="" href="#">Services</a>
+        <a class="" href="#">Community</a>
+        <a class="" href="#">Career</a>
+      </div>
+      <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12">
+        <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
       </div>
     </div>
   </nav>
-  <!---->
-
-  <section class="w-full">
-    <div class="flex xxs:flex-col xxs:space-y-12 xxs:mx-4 xxs:px-0 mt-20 px-56 xxs:text-center">
-      <div class="w-1/2 xxs:w-full xxs:py-auto pt-10">
-        <h1 class="text-primary font-extrabold text-4xl font-roboto xxs:text-black">Technology Radical And <br>
+  <!--hero-->
+  <section class="w-full py-16">
+    <div class="flex px-56">
+      <div class="w-1/2 py-32">
+        <h1 class="text-primary font-extrabold text-4xl font-roboto">Technology Radical And <br>
           Customer
           Excellence
           Services </h1>
-        <div class="w-8/12 xxs:w-full">
-          <p class="text-base italic pt-2 text-justify xxs:text-center">Lorem ipsum dolor sit amet,
+        <div class="w-8/12">
+          <p class="text-base italic pt-2 text-justify">Lorem ipsum dolor sit amet,
             consectetur
             adipiscing
             elit.
@@ -72,38 +72,33 @@
         </div>
         <button class="text-white mt-8">
           <div
-            class="buttonContainer bg-primary hover:bg-blue-600 w-44 p-3 rounded flex items-center justify-center text-sm ">
+            class="buttonContainer bg-primary hover:bg-blue-600 w-44 p-2 rounded flex items-center justify-center text-md ">
             Business Info Cycle
           </div>
         </button>
       </div>
-      <div class="w-1/2 xxs:w-full xxs:px-12 xxs:w-full z-10 flex justify-end items-center">
-        <div class="w-10/12 xxs:w-full">
-          <img src="assets/images/navbar/banner.png" alt="" class="object-fill w-full">
+      <div class="w-7/12 z-10 flex justify-end items-center">
+        <div class="w-10/12">
+          <img src="assets/images/navbar/banner.png" alt="" class="object-fill z-50">
         </div>
       </div>
     </div>
   </section>
 
-
-
-
-
-
   <!-- About Us -->
-  <section class="w-full mx-auto xxs:py-6 xxs:px-6 py-64 px-56">
-    <div class="flex xxs:flex-col space-x-16">
-      <!-- column 1 start -->
-      <div class="w-1/2 xxs:w-full">
-        <div class="bg-primary w-40 p-1 font-bold flex mb-4 justify-center tracking-wide">
+  <section class="w-full mx-auto pb-56 px-56">
+    <div class="flex space-x-36 || responsive space for code">
+      <!-- column 1-->
+      <div class="w-1/2 || responsive space for code">
+        <div class="flex bg-primary w-40 p-1 justify-center font-bold mb-4 tracking-wide">
           <h3 class="text-white text-xl items-center uppercase tracking-widest">About us</h3>
         </div>
-        <h1 class="font-bold text-primary capitalize italic text-3xl mb-8"> Our Brief history and core Values
+        <h1 class="font-bold text-primary capitalize italic text-3xl mb-8">Our Brief History and Core Values
         </h1>
         <!--item 1 start-->
         <div class="items pb-6">
-          <div class="wrapper flex items-center space-x-4">
-            <img src="assets/images/about/aboutBox.svg" alt="">
+          <div class="flex items-center space-x-2">
+            <img src="assets/images/about/aboutBox.svg" alt="" class="w-8">
             <h6 class="text-base text-primary font-bold tracking-wide capitalize">Brief history</h6>
           </div>
           <div>
@@ -134,8 +129,8 @@
         <!-- item 1 end-->
 
         <div class=" items">
-          <div class="wrapper flex items-center space-x-4 ">
-            <img src="assets/images/about/aboutBox.svg" alt="">
+          <div class="wrapper flex items-center space-x-2 ">
+            <img src="assets/images/about/aboutBox.svg" alt="" class="w-8">
             <h6 class="text-base text-primary font-bold tracking-wide capitalize">Core Values</h6>
           </div>
 
@@ -148,19 +143,256 @@
             Everyone.</p>
         </div>
       </div>
-      <!-- column 1 end-->
-      <!-- columend 2 start -->
-      <div class="w-1/2 z-10 flex justify-end items-center">
-        <img src="assets/images/about/about.png" alt="" class="object-contain w-full h-full">
+      <!-- column 1 -->
+
+      <!-- column 2 -->
+      <div class="w-1/2">
+        <img src="assets/images/about/about.png" alt="" class="object-fill w-full">
       </div>
-
+      <!-- column 2 -->
     </div>
-    </div>
-
-
-
   </section>
   <!-- About Us -->
+
+  <!-- GalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGallery -->
+  <section class="w-full h-96">
+    <div class="bg-purple-700 h-full ">
+
+    </div>
+  </section>
+  <!-- GalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGallery -->
+
+  <!--FoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundation-->
+  <section class="w-full mx-auto relative">
+    <div class="relative">
+      <div id="upperItems"
+        class="coverContainer w-full flex items-center justify-center space-x-80 z-0 top-0 invisible">
+        <div class="flex w-40 items-center justify-around">
+          <img src="assets/images/foundation/ilaw.png" alt="">
+        </div>
+        <div class="flex w-40 items-center justify-around">
+          <img src="assets/images/foundation/ilaw.png" alt="">
+        </div>
+        <div class="flex w-40 items-center justify-around">
+          <img src="assets/images/foundation/ilaw.png" alt="">
+        </div>
+      </div>
+      <div class="galleryContainer w-full px-56 items-center z-50 ">
+        <div class="flex justify-around items-center space-x-8">
+          <!--First Card Foundation-->
+          <div id="foundation"
+            class="boxes bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2">
+            <div class="iconWrapper mx-auto w-18 h-48 flex justify-center items-center">
+              <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
+              </div>
+            </div>
+            <div class="title text-center text-xl tracking-widest leading-relaxed uppercase">
+              <h4>Foundation</h4>
+            </div>
+            <div class="paragraph text-sm text-center mx-3">
+              <p>Is a profitable and Evolving Community of Problem Solvers and Technolgy Professionals Built in
+                the
+                Foundation of Honor, Cooperation, Friendship and Patriotism</p>
+            </div>
+          </div>
+          <!--First Card Foundation-->
+          <!--2nd Card Vision-->
+
+          <div id="vision"
+            class="boxes bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2">
+            <div class="iconWrapper mx-auto w-18 h-48 flex justify-center items-center">
+              <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
+              </div>
+            </div>
+            <div class="title text-center text-xl tracking-widest leading-relaxed uppercase">
+              <h4>Vision</h4>
+            </div>
+            <div class="paragraph text-sm text-center mx-3">
+              <p>To be a Significant Contributor to the Information and Communication Technology Industry and be
+                Recognize
+                as One of the Top Local ICT Provider in terms of Profitability and Quality of Service.</p>
+            </div>
+          </div>
+
+          <!--2nd Card Vision-->
+          <div id="mission"
+            class="boxes bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2">
+            <div class="iconWrapper mx-auto w-18 h-48 flex justify-center items-center">
+              <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
+              </div>
+            </div>
+            <div class="title text-center text-xl tracking-widest leading-relaxed uppercase">
+              <h4>Mission</h4>
+            </div>
+            <div class="paragraph text-sm text-center mx-3">
+              <p>To Contribute Radically on our Customers Success by Providing Technical Services with embedded
+                Excellence
+                and Develop
+
+                Industry Experts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="bottomItems" class="py-24 z-0 invisible">
+      <div class="coverContainer absolute w-full flex items-center justify-around bottom-0">
+        <div class="flex w-40 left-0">
+          <img src="assets/images/foundation/halaman2.png" alt="">
+        </div>
+        <div class="flex w-72 mr-44 mt-10">
+          <img src="assets/images/foundation/lamesa.png" alt="">
+        </div>
+        <div class="flex w-40 mr-20">
+          <img src="assets/images/foundation/halaman1.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--FoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundation-->
+
+  <!-- ServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServices -->
+  <section class="w-full mx-auto pt-8 bg-secondary shadow-lg">
+    <!-- Services pannel -->
+    <div class="flex bg-tertiary justify-center items-center">
+      <p1 class="uppercase font-bold text-4xl tracking-wider text-white py-4">services</p1>
+    </div>
+    <!-- Cards -->
+    <div class="py-20 mx-40">
+      <div class="cardContainer items-center text-center text-indigo-500 font-bold text-2xl">
+        <div class="flex items-stretch space-x-32 justify-around items-center || responsive space for code">
+          <div id="cardOne" class="flex-1 boxes px-1 bg-white w-56 py-32 flex items-center justify-center rounded-3xl">
+            <p>IT Service and Quality Management Consulting</p>
+            <p class="hidden text-center text-sm font-normal">From Capability Assessment to Root Cause
+              Analysis
+              to
+              help customer
+              improve their Business
+              Efficiency
+              and Capacity using International Standard and Best Practices Methods like ITIL, ISO, Lean Six Sigma and
+              others.</p>
+          </div>
+          <div id="cardTwo"
+            class="flex-1 boxes h-74 bg-white m-2 w-62 py-32 flex items-center justify-center rounded-3xl">
+            <p>IT Technical Support</p>
+            <p class="hidden text-sm font-normal">An end to end service provider typically for SMEs covering all their
+              IT needs from
+              helping the customer
+              decide which computer(s) to buy and where to buy them, building their office network, to providing
+              support for internet connection problems and desktop concerns such as application installation, files
+              backup, windows OS troubleshooting and others.</p>
+          </div>
+          <div id="cardThree"
+            class="flex-1 boxes h-74 bg-white m-2 w-80 py-32 flex items-center justify-center rounded-3xl">
+            <p>System and Network Design, Development, Implementation, Administration and Optimization</p>
+            <p class="hidden text-sm font-normal">Custom fit systems/application software development according to
+              customers requirements
+              from complex
+              enterprise portal to simple web page design. Designing customers IT infrastructure to support their
+              business needs, implementing customers own design for their internal use for their client requirements,
+              Integrating new system or network with their existing infrastructure, monitoring and improving customers
+              systems and networks availability.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cardContainer items-center text-center text-indigo-500 font-bold text-2xl mt-16">
+        <div class="flex items-stretch space-x-32 justify-around items-center sm:flex-wrap">
+          <div id="cardFour" class="flex-1 boxes bg-white m-2 w-80 py-32 flex items-center justify-center rounded-3xl">
+            <p>Personal Computer and Server Administration</p>
+            <p class="hidden text-sm font-normal">Day to day Desktop Support and Server Administration typically for
+              large enterprises,
+              from installation
+              of applications, troubleshooting hardware and software, to monitoring Server Application availability
+            </p>
+          </div>
+          <div id="cardFive" class="flex-1 boxes bg-white m-2 w-80 py-32 flex items-center justify-center rounded-3xl">
+            <p>Service, Software and CPE Quality Assurance Testing</p>
+            <p class="hidden text-sm font-normal">An external Quality Assurance Service for Businesses that are looking
+              for third party to
+              test their own
+              product/services before commercial deployment or a third party to test their acquired services or
+              product from their supplier or vendor</p>
+          </div>
+          <div id="cardSix" class="flex-1 boxes bg-white m-2 w-80 py-32 flex items-center justify-center rounded-3xl">
+            <p>GET IN TOUCH</p>
+            <p class="hidden text-sm font-normal">1912 Cityland 10 Tower 1 H.V. Dela Costa St. Salcedo Village, Makati
+              City, Philippines
+              (+632) 219-29-88
+              Like our page on Facebook</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cards -->
+  <!-- ServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServices -->
+
+  <!-- Career -->
+  <section class="py-16 w-full mx-auto">
+    <div class="careerWord mx-auto px-56">
+      <div class="container bg-primary w-40 mx-auto p-2 my-4">
+        <p class="text-white text-center text-xl font-bold uppercase">careers</p>
+      </div>
+      <div class="careerParagraph w-full text-center mx-auto">
+        <p class="text-gray-500 tracking-wide">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+          eiusmod
+          tempor
+          incididunt ut
+          labore et dolore magna aliqua. Ut enim <br>ad minim veniam, </p>
+      </div>
+    </div>
+    <!-- EndOfHeading -->
+    <!-- containerSvgAndStartUrCareer -->
+    <div class="flex mx-auto px-56">
+      <div class=" w-3/6 flex items-center justify-center pr-8">
+        <img class="flex justify-center items-center" src="assets/images/career/hr.png" alt="CareerImage">
+      </div>
+      <div class="w-1/2 flex-col mr-10">
+        <div class="title py-4 pt-24">
+          <h3 class="italic text-5xl font-medium font-roboto text-primary">Start your career with us!</h3>
+        </div>
+        <div class="paragraph items-center justify-center text-justify tracking-wide leading-relax w-4/6">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "</p>
+        </div>
+        <div class="button">
+          <button
+            class="bg-primary hover:bg-blue-600 py-2 flex px-5 text-white w-32 justify-center items-center rounded my-10">Learn
+            More</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- Career -->
+
+  <!-- FooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooter -->
+  <footer class="footer w-full shadow-t-lg">
+    <div class="footerContainer bg-purple-100 h-44">
+      <div class="wrapper px-56 flex">
+        <div class="w-1/2 h-44 flex text-center justify-center items-center">
+          <p class="text-lg italic font-semibold font-poppins capitalize">technology radical and customer excellence
+            services</p>
+        </div>
+        <div class="2ndWrapper w-1/2 flex">
+          <div class="w-1/2 text-right text-base h-44 py-10">
+            <p>1912 Cityland 10 Tower H.V. Dela Costa St.</p>
+            <p>Salcedo Village, Makati City, Philippines</p><br>
+            <p>(+632) 219-29-88</p>
+          </div>
+          <div class="w-1/2 flex">
+            <div class="block flex-col w-1 h-24 bg-black my-10 mx-2"></div>
+            <div class="my-14">
+              <img class="w-60" src="assets/images/icon/traceserv.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
 
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
