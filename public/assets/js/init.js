@@ -42,34 +42,35 @@ $(document).ready(() => {
       $(`${value} p`).toggleClass('hidden')
    }
    /*Foundation Vision Mission*/
-   $('#foundation').on('mouseover', () => {
-      $('#foundation').addClass('bg-tertiary text-white ')
+
+   $('.boxes').on('mouseenter', () => {
+      // $('.boxes').addClass('bg-tertiary text-white ')
       $('#upperItems').removeClass('invisible')
       $('#bottomItems').removeClass('invisible')
    })
-   $('#foundation').on('mouseleave', () => {
-      $('#foundation').removeClass('bg-tertiary text-white')
+   $('.boxes').on('mouseleave', () => {
+      // $('#foundation').removeClass('bg-tertiary text-white')
       $('#upperItems').addClass('invisible')
       $('#bottomItems').addClass('invisible')
    })
-   $('#vision').on('mouseover', () => {
-      $('#vision').addClass('bg-tertiary text-white')
-      $('#upperItems').removeClass('invisible')
-      $('#bottomItems').removeClass('invisible')
-   })
-   $('#vision').on('mouseleave', () => {
-      $('#vision').removeClass('bg-tertiary text-white')
-      $('#upperItems').addClass('invisible')
-      $('#bottomItems').addClass('invisible')
-   })
-   $('#mission').on('mouseover', () => {
-      $('#mission').addClass('bg-tertiary text-white')
-      $('#upperItems').removeClass('invisible')
-      $('#bottomItems').removeClass('invisible')
-   })
-   $('#mission').on('mouseleave', () => {
-      $('#mission').removeClass('bg-tertiary text-white')
-      $('#upperItems').addClass('invisible')
-      $('#bottomItems').addClass('invisible')
-   })
+   // $('#vision').on('mouseover', () => {
+   //    $('#vision').addClass('bg-tertiary text-white')
+   //    $('#upperItems').removeClass('invisible')
+   //    $('#bottomItems').removeClass('invisible')
+   // })
+   // $('#vision').on('mouseleave', () => {
+   //    $('#vision').removeClass('bg-tertiary text-white')
+   //    $('#upperItems').addClass('invisible')
+   //    $('#bottomItems').addClass('invisible')
+   // })
+   // $('#mission').on('mouseover', () => {
+   //    $('#mission').addClass('bg-tertiary text-white')
+   //    $('#upperItems').removeClass('invisible')
+   //    $('#bottomItems').removeClass('invisible')
+   // })
+   // $('#mission').on('mouseleave', () => {
+   //    $('#mission').removeClass('bg-tertiary text-white')
+   //    $('#upperItems').addClass('invisible')
+   //    $('#bottomItems').addClass('invisible')
+   // })
 })

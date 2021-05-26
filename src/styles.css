@@ -12,3 +12,7 @@
       rgba(112, 104, 221, 1) 71%
    );
 }
+
+.z-back {
+   z-index: -10 !important;
+}
