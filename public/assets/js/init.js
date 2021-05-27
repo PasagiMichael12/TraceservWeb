@@ -51,5 +51,22 @@ $(document).ready(() => {
    $('.boxes').on('mouseleave', () => {
       $('#upperItems').addClass('invisible')
       $('#bottomItems').addClass('invisible')
+      $('#bottomItems').removeClass('z-50')
+   })
+
+   $('#btnNetwork').on('click', function (e) {
+      $('#cne').removeClass('hidden')
+      $('#entCards').addClass('hidden')
+      $('#govCards').addClass('hidden')
+   })
+   $('#btnEnterprise').on('click', function (e) {
+      $('#cne').addClass('hidden')
+      $('#entCards').removeClass('hidden')
+      $('#govCards').addClass('hidden')
+   })
+   $('#btnGovernance').on('click', function (e) {
+      $('#entCards').addClass('hidden')
+      $('#cne').addClass('hidden')
+      $('#govCards').removeClass('hidden')
    })
 })

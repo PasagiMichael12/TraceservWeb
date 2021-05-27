@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- ... -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar + hero -->
+    <!-- || right side for responsive-->
+    <nav class="">
+        <div class="firsthalf relative flex px-56 py-4 || responsive space for code">
+            <div class="w-1/2 || ">
+                <div class="traceservIconContainer w-full items-center">
+                    <img class="w-3/12" src="assets/images/icon/traceserv.png" alt="TraceservIcon">
+                </div>
+            </div>
+            <div class="w-1/2 links flex font-bold text-white z-50 items-center justify-between ">
+                <a class="" href="index.html">Home</a>
+                <div class="relative inline-block text-left">
+                    <div class="">
+                        <a href="#" class="hover:text-yellow-300 menu-item" id="menu-button" aria-expanded="true"
+                            aria-haspopup="true">
+                            About us
+                        </a>
+                    </div>
+                    <div class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none invisible menu"
+                        id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-1" role="none">
+                            <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-0">Brief History</a>
+                            <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-1">Core Values</a>
+                            <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-2">Foundation</a>
+                            <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-3">Vision</a>
+                            <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-4">Mission</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="" href="#">Services</a>
+                <a class="" href="#">Community</a>
+                <a class="" href="career.html">Career</a>
+            </div>
+            <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12">
+                <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
+            </div>
+        </div>
+    </nav>
+    <!--hero-->
+    <section class="w-full py-16">
+        <div class="flex px-56">
+            <div class="w-1/2 py-32">
+                <h1 class="text-primary font-semibold text-5xl font-roboto uppercase left-0">Build your<h1
+                        class="text-primary font-bold text-8xl font-roboto uppercase left-0">Career</h1>
+                </h1>
+                <div class="w-full flex items-center ">
+                    <p class="text-3xl  text-justify tracking-wider">Work and be </p>
+                    <h1 class="text-3xl italic font-bold tracking-wider pl-2"> YOURSELF</h1>
+
+                </div>
+            </div>
+            <div class="w-7/12 z-10 flex justify-end items-center">
+                <div class="w-9/12">
+                    <img src="assets/images/svg/opisina.svg" alt="" class="object-fill z-50">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="w-full mx-auto py-20 px-56">
+        <div id="buttons" class="flex space-x-6 || responsive space for code">
+            <a type="button" id="btnNetwork"
+                class="button text-white uppercase font-bold bg-primary hover:bg-blue-600 rounded-md text-center w-44 p-2 rounded text-xl tracking-wider z-50">
+                Network
+            </a>
+            <a type="button" id="btnEnterprise"
+                class="button text-white uppercase font-bold bg-primary hover:bg-blue-600 rounded-md w-44 p-2 rounded text-xl tracking-wider text-center z-50">
+                Enterprise
+            </a>
+            <a type="button" id="btnGovernance"
+                class="button text-white uppercase font-bold bg-primary hover:bg-blue-600 rounded-md text-center w-44 p-2 rounded text-xl tracking-wider z-50">
+                Governance
+            </a>
+        </div>
+        <div class="careerPanel w-full flex py-6">
+            <div id="cne" class="engineerCards flex hidden">
+                <div class="CadetNetworkEngineerContainer w-1/3">
+                    <div class="w-full bg-primary h-4"></div>
+                    <div class="cneContainer p-10 bg-secondary">
+                        <div class="title pb-2">
+                            <p class="uppercase text-lg font-semibold">cadet network engineer</p>
+                        </div>
+                        <div class="paragraph">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+                                Aliquam
+                                erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+                        </div>
+                        <div class="locationContainer pt-2">
+                            <div class="container flex items-center">
+                                <i class="fas fa-map-marker-alt fa-2x" style="color:#7276e8;"></i>
+                                <p class="capitalize text-primary px-1">Metro manila, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="viewContainer flex justify-end">
+                            <a href="" class="text-primary font-bold italic uppercase">View More...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="CadetNetworkEngineerContainer w-1/3 ml-8">
+                    <div class="w-full bg-primary h-4"></div>
+                    <div class="cneContainer p-10 bg-secondary">
+                        <div class="title pb-2">
+                            <p class="uppercase text-lg font-semibold">network engineer</p>
+                        </div>
+                        <div class="paragraph">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+                                Aliquam
+                                erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+                        </div>
+                        <div class="locationContainer pt-2">
+                            <div class="container flex items-center">
+                                <i class="fas fa-map-marker-alt fa-2x" style="color:#7276e8;"></i>
+                                <p class="capitalize text-primary px-1">Metro manila, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="viewContainer flex justify-end">
+                            <a href="" class="text-primary font-bold italic uppercase">View More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="govCards" class="flex hidden">
+                <div class="CadetNetworkEngineerContainer w-1/3">
+                    <div class="w-full bg-primary h-4"></div>
+                    <div class="cneContainer p-10 bg-secondary">
+                        <div class="title pb-2">
+                            <p class="uppercase text-lg font-semibold">financial assistant</p>
+                        </div>
+                        <div class="paragraph">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+                                Aliquam
+                                erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+                        </div>
+                        <div class="locationContainer pt-2">
+                            <div class="container flex items-center">
+                                <i class="fas fa-map-marker-alt fa-2x" style="color:#7276e8;"></i>
+                                <p class="capitalize text-primary px-1">Metro manila, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="viewContainer flex justify-end">
+                            <a href="" class="text-primary font-bold italic uppercase">View More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="entCards" class="w-full mx-auto flex justify-center items-center">
+                <img src="../public/assets/images/svg/office.svg" alt="" class="object-fill w-full">
+            </div>
+    </section>
+
+
+    <!-- FooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooter -->
+    <footer class="footer w-full shadow-t-lg">
+        <div class="footerContainer bg-secondary h-44">
+            <div class="wrapper px-56 flex">
+                <div class="w-1/2 h-44 flex text-center justify-center items-center">
+                    <p class="text-lg italic font-semibold font-poppins capitalize">technology radical and customer
+                        excellence
+                        services</p>
+                </div>
+                <div class="2ndWrapper w-1/2 flex">
+                    <div class="w-1/2 text-right text-base h-44 py-10">
+                        <p>1912 Cityland 10 Tower H.V. Dela Costa St.</p>
+                        <p>Salcedo Village, Makati City, Philippines</p><br>
+                        <p>(+632) 219-29-88</p>
+                    </div>
+                    <div class="w-1/2 flex">
+                        <div class="block flex-col w-1 h-24 bg-black my-10 mx-2"></div>
+                        <div class="my-14">
+                            <img class="w-60" src="assets/images/icon/traceserv.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="assets/js/init.js"></script>
+</body>
+
+</html>
