@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="assets/js/MixGallery.js-master/pub/MixGallery.css">
+
 </head>
 
 <body>
@@ -32,22 +34,22 @@
             class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none invisible menu"
             id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
             <div class="py-1" role="none">
-              <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                id="menu-item-0">Brief History</a>
-              <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                id="menu-item-1">Core Values</a>
-              <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                id="menu-item-2">Foundation</a>
-              <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+              <a href="#briefHistory" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                tabindex="-1" id="menu-item-0">Brief History</a>
+              <a href="#coreValues" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                tabindex="-1" id="menu-item-1">Core Values</a>
+              <a href="#foundation" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                tabindex="-1" id="menu-item-2">Foundation</a>
+              <a href="#vision" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
                 id="menu-item-3">Vision</a>
-              <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                id="menu-item-4">Mission</a>
+              <a href="#mission" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                tabindex="-1" id="menu-item-4">Mission</a>
             </div>
           </div>
         </div>
-        <a class="" href="#">Services</a>
-        <a class="" href="#">Community</a>
-        <a class="" href="career.html">Career</a>
+        <a class="smooth-scroll" href="#services">Services</a>
+        <a class="" href="community.html">Community</a>
+        <a class="" href="careers.html">Careers</a>
       </div>
       <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12">
         <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
@@ -99,7 +101,7 @@
         <div class="items pb-6">
           <div class="flex items-center space-x-2">
             <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
-            <h6 class="text-lg text-primary font-bold tracking-wide capitalize">Brief history</h6>
+            <h6 class="text-lg text-primary font-bold tracking-wide capitalize" id="briefHistory">Brief history</h6>
           </div>
           <div>
             <p class="text-justify text-sm text-gray-700 pt-6">We trace our beginnings from year 2009 as a collaboration
@@ -134,7 +136,7 @@
         <div class="items pt-6">
           <div class="wrapper flex items-center space-x-2 ">
             <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
-            <h6 class="text-lg text-primary font-bold tracking-wide capitalize">Core Values</h6>
+            <h6 class="text-lg text-primary font-bold tracking-wide capitalize" id="coreValues">Core Values</h6>
           </div>
 
           <p class="text-justify text-sm text-gray-700 pt-6">Our customers are the Reason of Our Existence, Our
@@ -156,11 +158,25 @@
     </div>
   </section>
   <!-- About Us -->
+  <section>
 
+  </section>
   <!-- GalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGallery -->
-  <section class="w-full h-96">
-    <div class="bg-purple-700 h-full ">
-
+  <section class="flex-col w-full mx-auto pt-4 pb-16 bgGradientGallery">
+    <div class="container bg-white w-40 mx-auto p-2 my-8">
+      <p class="text-primary text-center text-xl font-bold uppercase">Gallery</p>
+    </div>
+    <div class="flex w-full px-56">
+      <div class="featureContainer w-full bg-white">
+        <div class="flex">
+          <div class="container w-full">
+            <div class="pictureContainer bg-white w-full relative flex items-center justify-center p-2">
+              <div id="gallery">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- GalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGallery -->
@@ -257,7 +273,7 @@
   <!-- ServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServices -->
   <section class="w-full pt-14 mx-auto bg-secondary shadow-lg">
     <div class="flex bg-tertiary justify-center items-center">
-      <p1 class="uppercase font-bold text-4xl tracking-wider text-white py-4">
+      <p1 class="uppercase font-bold text-4xl tracking-wider text-white py-4" id="services">
         services</p1>
     </div>
     <!-- Cards -->
@@ -399,7 +415,7 @@
   </footer>
 
 
-
+  <script src="assets/js/MixGallery.js-master/pub/js/MixGallery.js"></script>
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../node_modules/wowjs/dist/wow.min.js"></script>
   <script src="assets/js/init.js"></script>
