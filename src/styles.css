@@ -9,11 +9,11 @@ html {
 }
 
 .bgGradientNavbarResponsive {
-   background: rgb(100, 38, 171);
+   background: rgb(62, 229, 242);
    background: linear-gradient(
-      90deg,
-      rgba(100, 38, 171, 1) 0%,
-      rgba(112, 104, 221, 1) 71%
+      153deg,
+      rgba(62, 229, 242, 1) 0%,
+      rgba(242, 231, 62, 1) 100%
    );
 }
 .bgGradientGallery {
@@ -36,4 +36,22 @@ html {
       rgba(242, 237, 62, 1) 65%,
       rgba(242, 62, 62, 1) 87%
    );
+}
+.rotateY {
+   transform: rotate(-180deg);
+   transition-duration: 1s;
+}
+.rotateBack {
+   transform: rotate(45deg);
+   transition-duration: 1s;
+}
+.showCross {
+   opacity: 0;
+   transition: all 0.3s ease;
+   transition-duration: 0.5s;
+}
+.showBurger {
+   opacity: 0;
+   transition: all 0.3s ease;
+   transition-duration: 0.5s;
 }

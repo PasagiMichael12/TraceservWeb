@@ -8,20 +8,33 @@
   <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="assets/js/MixGallery.js-master/pub/MixGallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
   <!-- Navbar + hero -->
   <!-- || right side for responsive-->
-  <nav>
-    <div class="firsthalf relative flex px-56 py-4 || responsive space for code">
+  <nav class="w-full flex flex-wrap items-center justify-between  || xxs:p-5 xxs:sticky xxs:shadow-lg">
+    <div class="w-full firsthalf relative flex px-56 py-4 || xxs:px-0 xxs:py-2">
       <div class="w-1/2 || ">
         <div class="traceservIconContainer w-full items-center">
-          <img class="w-3/12" src="assets/images/icon/traceserv.png" alt="TraceservIcon">
+          <img class="w-2/6 || xxs:w-full" src="assets/images/icon/traceserv.png" alt="TraceservIcon">
         </div>
       </div>
-      <div class="w-1/2 links flex font-bold text-white z-50 items-center justify-between ">
+      <div class="w-1/2 flex md:hidden items-center justify-end relative">
+        <button id="hamburger" class="animate__animated">
+          <span style="color:#7276E8">
+            <div class="relative right-10 bottom-5">
+              <i id="burger" class="fas fa-bars fa-2x absolute"></i>
+              <i id="close" class="fas fa-times fa-2x absolute showCross"></i>
+            </div>
+          </span>
+        </button>
+      </div>
+
+      <div class="w-1/2 links flex font-bold text-white z-50 items-center justify-between || xxs:text-black
+            xxs:hidden xxs:z-10">
         <a class="" href="index.html">Home</a>
         <!--Dropdown About us-->
         <div class="relative inline-block text-left">
@@ -32,8 +45,8 @@
             </a>
           </div>
           <div
-            class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none invisible menu"
-            id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden menu"
+            id="submenu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
             <div class="py-1" role="none">
               <a href="#briefHistory" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
                 tabindex="-1" id="menu-item-0">Brief History</a>
@@ -55,20 +68,69 @@
         <a class="" href="community.html">Community</a>
         <a class="" href="careers.html">Careers</a>
       </div>
-      <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12">
-        <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
+    </div>
+    <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden">
+      <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
+    </div>
+    </div>
+    <!--Navlik xxs + sm + md -->
+    <div id="dropdown" class="navlink w-full bg-primary relative text-white flex-col px-10 py-2 hidden z-50">
+      <div class="w-1/2 links flex-col">
+        <div>
+          <a class="hover:text-yellow-500" href="#">Home</a>
+        </div>
+        <div>
+          <div class="relative inline-block text-left absolute">
+            <div class="">
+              <a href="#" class="hover:text-yellow-300 menu-item" id="menu-button" aria-expanded="true"
+                aria-haspopup="true">
+                About us
+              </a>
+            </div>
+            <div id="aboutusmenu"
+              class="origin-top-right relative hidden mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none menu"
+              id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+              <div class="py-1" role="none">
+                <a href="#briefHistory" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                  tabindex="-1" id="menu-item-0">Brief History</a>
+                <a href="#coreValues" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                  tabindex="-1" id="menu-item-1">Core Values</a>
+                <a href="#galleryContainer" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                  tabindex="-1" id="menu-item-0">Gallery</a>
+                <a href="#foundation" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                  tabindex="-1" id="menu-item-2">Foundation</a>
+                <a href="#vision" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                  tabindex="-1" id="menu-item-3">Vision</a>
+                <a href="#mission" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                  tabindex="-1" id="menu-item-4">Mission</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a class="hover:text-yellow-500" href="#">Services</a>
+        </div>
+        <div>
+          <a class="hover:text-yellow-500" href="#">Community</a>
+        </div>
+        <div>
+          <a class="hover:text-yellow-500" href="#">Careers</a>
+        </div>
       </div>
     </div>
+    <!--Navlik xxs + sm + md -->
   </nav>
+
+
   <!--hero-->
   <section class="w-full py-10">
-    <div class="flex px-56">
-      <div class="w-1/2 py-32">
-        <h1 class="text-primary font-extrabold text-4xl font-roboto">Technology Radical And <br>
+    <div class="flex px-56 || xxs:px-1 xxs:flex-col xxs:mx-auto">
+      <div class="w-1/2 py-32 || xxs:w-full xxs:py-1 xxs:text-center xxs:mx-auto">
+        <h1 class="text-primary font-extrabold text-4xl font-roboto || xxs:text-2xl">Technology Radical And <br>
           Customer
           Excellence
           Services </h1>
-        <div class="w-8/12">
+        <div class="w-8/12 || xxs:w-full xxs:mx-auto xxs:px-2">
           <p class="text-base italic pt-2 text-justify">Lorem ipsum dolor sit amet,
             consectetur
             adipiscing
@@ -83,7 +145,7 @@
           </div>
         </button>
       </div>
-      <div class="w-7/12 z-10 mx-auto">
+      <div class="w-7/12 z-10 mx-auto || xxs:w-full xxs:mx-auto xxs:flex xxs:items-center xxs:hidden">
         <div class="w-full">
           <img src="assets/images/svg/banner.svg" alt="" class="object-fill z-50">
         </div>
@@ -93,23 +155,27 @@
   <!--hero-->
 
   <!-- About Us -->
-  <section class="w-full mx-auto py-36 px-56">
-    <div class="flex space-x-36 || responsive space for code">
+  <section class="w-full mx-auto py-36 px-56 || xxs:px-1 xxs:py-1">
+    <div class="flex space-x-36 || xxs:flex-col xxs:space-x-0">
       <!-- column 1-->
-      <div class="w-1/2 || responsive space for code">
-        <div class="flex bg-primary w-40 p-1 justify-center font-bold mb-4 tracking-wide">
+      <div class="w-1/2 || xxs:w-full">
+        <div class="flex bg-primary w-40 justify-center font-bold mb-4 tracking-wide shadow-lg || xxs:w-full">
           <h3 class="text-white text-xl items-center uppercase tracking-widest">About us</h3>
         </div>
-        <h1 class="font-bold text-primary capitalize italic text-3xl mb-8">Our Brief History and Core Values
+        <h1 class="font-bold text-primary capitalize italic text-3xl mb-8 || xxs:text-xl xxs:text-center">Our Brief
+          History and Core
+          Values
         </h1>
         <!--item 1 start-->
-        <div class="items pb-6">
-          <div class="flex items-center space-x-2">
+        <div class="items || xxs:px-3">
+          <div class="flex items-center space-x-2 ">
             <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
-            <h6 class="text-lg text-primary font-bold tracking-wide capitalize" id="briefHistory">Brief history</h6>
+            <h6 class="text-xl text-primary font-bold tracking-wide capitalize" id="briefHistory">Brief history</h6>
           </div>
           <div>
-            <p class="text-justify text-sm text-gray-700 pt-6">We trace our beginnings from year 2009 as a collaboration
+            <p class="text-justify text-lg text-gray-700 pt-6 || xxs:text-sm xxs:pt-2">We trace our beginnings from year
+              2009 as
+              a collaboration
               of
               technology of
               Technology
@@ -119,9 +185,10 @@
               capability to evaluate and organize their internal IT department to enable and operate their IT
               requirements
               and resources. <span class="text-primary"><button id="seeMore" type="button" href=""
-                  class="font-semibold">See
+                  class="font-semibold || xxs:text-sm">See
                   more...</button></span>
-            <p class="par2 hidden text-justify text-sm text-gray-700 mt-4">For the past years the group is
+            <p class="par2 hidden text-justify text-lg text-gray-700 mt-4 || xxs:text-sm">For the past years the group
+              is
               successfuly
               serving
               offices
@@ -138,13 +205,14 @@
         </div>
         <!-- item 1 end-->
 
-        <div class="items pt-6">
-          <div class="wrapper flex items-center space-x-2 ">
+        <div class="items pt-4 || xxs:pb-14 xxs:px-3">
+          <div class="wrapper flex items-center space-x-2 ||">
             <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
-            <h6 class="text-lg text-primary font-bold tracking-wide capitalize" id="coreValues">Core Values</h6>
+            <h6 class="text-xl text-primary font-bold tracking-wide capitalize" id="coreValues">Core Values</h6>
           </div>
 
-          <p class="text-justify text-sm text-gray-700 pt-6">Our customers are the Reason of Our Existence, Our
+          <p class="text-justify text-lg text-gray-700 pt-6 || xxs:text-sm xxs:pt-2">Our customers are the Reason of Our
+            Existence, Our
             Employees and
             Partners
             Keeps Us
@@ -156,7 +224,7 @@
       <!-- column 1 -->
 
       <!-- column 2 -->
-      <div class="w-1/2">
+      <div class="w-1/2 || xxs:hidden">
         <img src="assets/images/about/about.png" alt="" class="object-fill w-full">
       </div>
       <!-- column 2 -->
@@ -166,10 +234,10 @@
 
   <!-- GalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGallery -->
   <section id="galleryContainer" class="flex-col w-full mx-auto pt-4 pb-32 bgGradientGallery">
-    <div class="container bg-white w-40 mx-auto p-2 my-8">
-      <p class="text-primary text-center text-xl font-bold uppercase">Gallery</p>
+    <div class="container bg-white w-40 mx-auto p-2 my-8 shadow-lg || xxs:w-28 xxs:p-1">
+      <p class="text-primary text-center text-xl font-bold uppercase || xxs:text-md">Gallery</p>
     </div>
-    <div class="w-full px-56">
+    <div class="w-full px-56 || xxs:px-3">
       <div class="pictureContainer bg-white w-full relative flex items-center justify-center p-2">
         <div id="gallery">
         </div>
@@ -184,7 +252,7 @@
       <!--FVM Container-->
       <!--lights-->
       <div id="upperItems"
-        class="lightsContainer w-full absolute px-56 flex items-center justify-around z-0 top-0 invisible">
+        class="lightsContainer w-full absolute px-56 flex items-center justify-around z-0 top-0 invisible || xxs:hidden">
         <div class="light w-40">
           <img class="" src="assets/images/foundation/ilaw.png" alt="">
         </div>
@@ -198,7 +266,7 @@
       <!--lights-->
       <!--plants + table-->
       <div id="bottomItems"
-        class="bottomContainer w-full px-56 absolute flex items-center justify-around bottom-0 invisible">
+        class="bottomContainer w-full px-56 absolute flex items-center justify-around bottom-0 invisible xxs:hidden">
         <div class="bottomItem w-28 ">
           <img class="z-auto" src="assets/images/foundation/halaman2.png" alt="">
         </div>
@@ -211,11 +279,11 @@
       </div>
       <!--plants + table-->
       <!--Cards-->
-      <div class="fvmContainer w-full px-56 z-10 py-40">
-        <div id="fvmContainer" class="flex justify-around items-center">
+      <div class="fvmContainer w-full px-56 z-10 py-40 || xxs:px-0 xxs:mx-auto xxs:py-10">
+        <div id="fvmContainer" class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 xxs:mx-auto">
           <!--Foundation card-->
-          <div id="foundation"
-            class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out">
+          <div id="foundation" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center 
+            justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out || xxs:w-4/5">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
               <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
               </div>
@@ -230,8 +298,8 @@
             </div>
           </div>
           <!--Vision Card-->
-          <div id="vision"
-            class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out">
+          <div id="vision" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 
+            transition duration-700 ease-in-out || xxs:w-4/5">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
               <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
               </div>
@@ -245,8 +313,8 @@
             </div>
           </div>
           <!--Mission Card-->
-          <div id="mission"
-            class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out">
+          <div id="mission" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out
+            || xxs:w-4/5">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
               <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
               </div>
@@ -270,76 +338,86 @@
   <!--FoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundation-->
 
   <!-- ServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServices -->
-  <section class="w-full pt-14 mx-auto bg-secondary shadow-lg">
-    <div class="flex bg-tertiary justify-center items-center">
-      <p1 class="uppercase font-bold text-4xl tracking-wider text-white py-4" id="services">
-        services</p1>
-    </div>
-    <!-- Cards -->
-    <div class="py-20 mx-40">
-      <div class="items-center text-center text-primary font-bold text-2xl">
-        <div class="flex justify-around items-center || responsive space for code">
-          <div id="cardOne" class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl">
-            <p>IT Service and Quality Management Consulting</p>
-            <p class="hidden text-center text-sm font-normal">From Capability Assessment to Root Cause
-              Analysis
-              to
-              help customer
-              improve their Business
-              Efficiency
-              and Capacity using International Standard and Best Practices Methods like ITIL, ISO, Lean Six Sigma and
-              others.</p>
-          </div>
-          <div id="cardTwo" class="h-96 w-80 bg-white py-32 px-12 flex items-center justify-center rounded-3xl">
-            <p>IT Technical Support</p>
-            <p class="hidden text-center text-sm font-normal">An end to end service provider typically for SMEs
-              covering all their
-              IT needs from
-              helping the customer
-              decide which computer(s) to buy and where to buy them, building their office network, to providing
-              support for internet connection problems and desktop concerns such as application installation, files
-              backup, windows OS troubleshooting and others.</p>
-          </div>
-          <div id="cardThree" class="h-96 w-80 bg-white py-32 px-12 flex items-center justify-center rounded-3xl">
-            <p>System and Network Design, Development, Implementation, Administration and Optimization</p>
-            <p class="hidden text-center text-sm font-normal">Custom fit systems/application software development
-              according to
-              customers requirements
-              from complex
-              enterprise portal to simple web page design. Designing customers IT infrastructure to support their
-              business needs, implementing customers own design for their internal use for their client requirements,
-              Integrating new system or network with their existing infrastructure, monitoring and improving customers
-              systems and networks availability.</p>
+  <section>
+    <div class="w-full pt-14 mx-auto bg-secondary shadow-lg || ">
+      <div class="flex bg-tertiary justify-center items-center || ">
+        <p class="uppercase font-bold text-4xl tracking-wider text-white py-4 shadow-lg || xxs:text-2xl" id="services">
+          services</p>
+      </div>
+      <!-- Cards -->
+      <div class="py-20 mx-40 || xxs:mx-auto xxs:py-10">
+        <div class="items-center text-center text-primary font-bold text-2xl">
+          <div class="flex justify-around items-center || xxs:flex-col xxs:space-y-4">
+            <div id="cardOne"
+              class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
+              <p>IT Service and Quality Management Consulting</p>
+              <p class="hidden text-center text-sm font-normal">From Capability Assessment to Root Cause
+                Analysis
+                to
+                help customer
+                improve their Business
+                Efficiency
+                and Capacity using International Standard and Best Practices Methods like ITIL, ISO, Lean Six Sigma and
+                others.</p>
+            </div>
+            <div id="cardTwo"
+              class="h-96 w-80 bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
+              <p>IT Technical Support</p>
+              <p class="hidden text-center text-sm font-normal">An end to end service provider typically for SMEs
+                covering all their
+                IT needs from
+                helping the customer
+                decide which computer(s) to buy and where to buy them, building their office network, to providing
+                support for internet connection problems and desktop concerns such as application installation, files
+                backup, windows OS troubleshooting and others.</p>
+            </div>
+            <div id="cardThree"
+              class="h-96 w-80 bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5 xxs:px-8">
+              <p>System and Network Design, Development, Implementation, Administration and Optimization</p>
+              <p class="hidden text-center text-sm font-normal || ">Custom fit systems/application
+                software
+                development
+                according to
+                customers requirements
+                from complex
+                enterprise portal to simple web page design. Designing customers IT infrastructure to support their
+                business needs, implementing customers own design for their internal use for their client requirements,
+                Integrating new system or network with their existing infrastructure, monitoring and improving customers
+                systems and networks availability.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="items-center text-center text-primary font-bold text-2xl mt-24">
-        <div class="flex justify-around items-center || responsive">
-          <div id="cardFour" class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl">
-            <p>Personal Computer and Server Administration</p>
-            <p class="hidden text-center text-sm font-normal">Day to day Desktop Support and Server Administration
-              typically for
-              large enterprises,
-              from installation
-              of applications, troubleshooting hardware and software, to monitoring Server Application availability
-            </p>
-          </div>
-          <div id="cardFive" class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl">
-            <p>Service, Software and CPE Quality Assurance Testing</p>
-            <p class="hidden text-center text-sm font-normal">An external Quality Assurance Service for Businesses
-              that are looking
-              for third party to
-              test their own
-              product/services before commercial deployment or a third party to test their acquired services or
-              product from their supplier or vendor</p>
-          </div>
-          <div id="cardSix" class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl">
-            <p>GET IN TOUCH</p>
-            <p class="hidden text-center text-sm font-normal">1912 Cityland 10 Tower 1 H.V. Dela Costa St. Salcedo
-              Village, Makati
-              City, Philippines
-              (+632) 219-29-88
-              Like our page on Facebook</p>
+        <div class="items-center text-center text-primary font-bold text-2xl mt-24 || xxs:mt-4">
+          <div class="flex justify-around items-center || xxs:flex-col xxs:space-y-4">
+            <div id="cardFour"
+              class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
+              <p>Personal Computer and Server Administration</p>
+              <p class="hidden text-center text-sm font-normal">Day to day Desktop Support and Server Administration
+                typically for
+                large enterprises,
+                from installation
+                of applications, troubleshooting hardware and software, to monitoring Server Application availability
+              </p>
+            </div>
+            <div id="cardFive"
+              class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
+              <p>Service, Software and CPE Quality Assurance Testing</p>
+              <p class="hidden text-center text-sm font-normal">An external Quality Assurance Service for Businesses
+                that are looking
+                for third party to
+                test their own
+                product/services before commercial deployment or a third party to test their acquired services or
+                product from their supplier or vendor</p>
+            </div>
+            <div id="cardSix"
+              class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
+              <p>GET IN TOUCH</p>
+              <p class="hidden text-center text-sm font-normal">1912 Cityland 10 Tower 1 H.V. Dela Costa St. Salcedo
+                Village, Makati
+                City, Philippines
+                (+632) 219-29-88
+                Like our page on Facebook</p>
+            </div>
           </div>
         </div>
       </div>
@@ -350,8 +428,8 @@
 
   <!-- Career -->
   <section class="py-16 w-full mx-auto">
-    <div class="careerWord mx-auto px-56">
-      <div class="container bg-primary w-40 mx-auto p-2 my-4">
+    <div class="careerWord mx-auto px-56 || xxs:px-2">
+      <div class="container bg-primary w-40 mx-auto p-2 my-4 shadow-lg">
         <p class="text-white text-center text-xl font-bold uppercase">careers</p>
       </div>
       <div class="careerParagraph w-full text-center mx-auto">
@@ -364,17 +442,20 @@
     </div>
     <!-- EndOfHeading -->
     <!-- containerSvgAndStartUrCareer -->
-    <div class="flex mx-auto px-56">
-      <div class=" w-1/2 flex mx-auto pr-8">
+    <div class="flex mx-auto px-56 || xxs:px-0 xxs:flex-col xxs:mx-auto">
+      <div class=" w-1/2 flex mx-auto pr-8 || xxs:hidden">
         <div class="w-full">
           <img class="flex justify-center items-center" src="assets/images/career/hr.png" alt="CareerImage">
         </div>
       </div>
-      <div class="w-1/2 flex-col mr-10">
-        <div class="title py-4 pt-24">
-          <h3 class="italic text-5xl font-medium font-roboto text-primary">Start your career with us!</h3>
+      <div
+        class="w-1/2 flex-col mr-10 || xxs:w-full xxs:mr-0 xxs:text-center xxs:mx-auto xxs:flex xxs:items-center xxs:justify-center">
+        <div class="title py-4 pt-24 || xxs:py-2 xxs:pt-14">
+          <h3 class="italic text-5xl font-medium font-roboto text-primary || xxs:text-4xl">Start your career with us!
+          </h3>
         </div>
-        <div class="paragraph items-center justify-center text-justify tracking-wide leading-relax w-4/6">
+        <div
+          class="paragraph items-center justify-center text-justify tracking-wide leading-relax w-4/6 || xxs:text-center">
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "</p>
         </div>
@@ -385,28 +466,27 @@
         </div>
       </div>
     </div>
-    </div>
-    </div>
   </section>
   <!-- Career -->
 
   <!-- FooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooter -->
   <footer class="footer w-full shadow-t-lg">
     <div class="footerContainer bg-purple-100 h-44">
-      <div class="wrapper px-56 flex">
-        <div class="w-1/2 h-44 flex text-center justify-center items-center">
-          <p class="text-lg italic font-semibold font-poppins capitalize">technology radical and customer excellence
+      <div class="wrapper px-56 flex || xxs:flex-col xxs:mx-auto xxs:p-1">
+        <div class="w-1/2 h-44 flex text-center justify-center items-center || xxs:w-full xxs:h-14">
+          <p class="text-lg italic font-semibold font-poppins capitalize || xxs:text-sm">technology radical and customer
+            excellence
             services</p>
         </div>
-        <div class="2ndWrapper w-1/2 flex">
-          <div class="w-1/2 text-right text-base h-44 py-10">
+        <div class="2ndWrapper w-1/2 flex || xxs:mx-auto xxs:p-0 xxs:w-full xxs:bg-secondary">
+          <div class="w-1/2 text-right text-base h-44 py-10 || xxs:text-xs">
             <p>1912 Cityland 10 Tower H.V. Dela Costa St.</p>
             <p>Salcedo Village, Makati City, Philippines</p><br>
             <p>(+632) 219-29-88</p>
           </div>
-          <div class="w-1/2 flex">
-            <div class="block flex-col w-1 h-24 bg-black my-10 mx-2"></div>
-            <div class="my-14">
+          <div class="w-1/2 flex || xxs:h-20">
+            <div class="block flex-col w-1 h-24 bg-black my-10 mx-2 || xxs:my-10"></div>
+            <div class="my-14 || xxs:py-3">
               <img class="w-60" src="assets/images/icon/traceserv.png" alt="">
             </div>
           </div>
@@ -419,6 +499,7 @@
   <script src="assets/js/MixGallery.js-master/pub/js/MixGallery.js"></script>
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../node_modules/wowjs/dist/wow.min.js"></script>
+  <script src="assets/js/index.js"></script>
   <script src="assets/js/init.js"></script>
 </body>
 
