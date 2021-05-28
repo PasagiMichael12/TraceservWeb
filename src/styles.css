@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+   scroll-behavior: smooth;
+}
+
 .bgGradientNavbarResponsive {
    background: rgb(100, 38, 171);
    background: linear-gradient(

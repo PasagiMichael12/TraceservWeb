@@ -14,7 +14,7 @@
 <body>
   <!-- Navbar + hero -->
   <!-- || right side for responsive-->
-  <nav class="">
+  <nav>
     <div class="firsthalf relative flex px-56 py-4 || responsive space for code">
       <div class="w-1/2 || ">
         <div class="traceservIconContainer w-full items-center">
@@ -23,6 +23,7 @@
       </div>
       <div class="w-1/2 links flex font-bold text-white z-50 items-center justify-between ">
         <a class="" href="index.html">Home</a>
+        <!--Dropdown About us-->
         <div class="relative inline-block text-left">
           <div class="">
             <a href="#" class="hover:text-yellow-300 menu-item" id="menu-button" aria-expanded="true"
@@ -38,6 +39,8 @@
                 tabindex="-1" id="menu-item-0">Brief History</a>
               <a href="#coreValues" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
                 tabindex="-1" id="menu-item-1">Core Values</a>
+              <a href="#galleryContainer" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                tabindex="-1" id="menu-item-0">Gallery</a>
               <a href="#foundation" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
                 tabindex="-1" id="menu-item-2">Foundation</a>
               <a href="#vision" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
@@ -47,6 +50,7 @@
             </div>
           </div>
         </div>
+        <!--Dropdown About us-->
         <a class="smooth-scroll" href="#services">Services</a>
         <a class="" href="community.html">Community</a>
         <a class="" href="careers.html">Careers</a>
@@ -57,7 +61,7 @@
     </div>
   </nav>
   <!--hero-->
-  <section class="w-full py-16">
+  <section class="w-full py-10">
     <div class="flex px-56">
       <div class="w-1/2 py-32">
         <h1 class="text-primary font-extrabold text-4xl font-roboto">Technology Radical And <br>
@@ -79,16 +83,17 @@
           </div>
         </button>
       </div>
-      <div class="w-7/12 z-10 flex justify-end items-center">
-        <div class="w-10/12">
-          <img src="assets/images/navbar/banner.png" alt="" class="object-fill z-50">
+      <div class="w-7/12 z-10 mx-auto">
+        <div class="w-full">
+          <img src="assets/images/svg/banner.svg" alt="" class="object-fill z-50">
         </div>
       </div>
     </div>
   </section>
+  <!--hero-->
 
   <!-- About Us -->
-  <section class="w-full mx-auto py-40 px-56">
+  <section class="w-full mx-auto py-36 px-56">
     <div class="flex space-x-36 || responsive space for code">
       <!-- column 1-->
       <div class="w-1/2 || responsive space for code">
@@ -158,23 +163,15 @@
     </div>
   </section>
   <!-- About Us -->
-  <section>
 
-  </section>
   <!-- GalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGallery -->
-  <section class="flex-col w-full mx-auto pt-4 pb-16 bgGradientGallery">
+  <section id="galleryContainer" class="flex-col w-full mx-auto pt-4 pb-32 bgGradientGallery">
     <div class="container bg-white w-40 mx-auto p-2 my-8">
       <p class="text-primary text-center text-xl font-bold uppercase">Gallery</p>
     </div>
-    <div class="flex w-full px-56">
-      <div class="featureContainer w-full bg-white">
-        <div class="flex">
-          <div class="container w-full">
-            <div class="pictureContainer bg-white w-full relative flex items-center justify-center p-2">
-              <div id="gallery">
-              </div>
-            </div>
-          </div>
+    <div class="w-full px-56">
+      <div class="pictureContainer bg-white w-full relative flex items-center justify-center p-2">
+        <div id="gallery">
         </div>
       </div>
     </div>
@@ -182,7 +179,7 @@
   <!-- GalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGallery -->
 
   <!--FoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundation-->
-  <section class="w-full mx-auto relative">
+  <section class="w-full mx-auto">
     <div class="foundationContainer relative">
       <!--FVM Container-->
       <!--lights-->
@@ -198,9 +195,11 @@
           <img src="assets/images/foundation/ilaw.png" alt="">
         </div>
       </div>
+      <!--lights-->
+      <!--plants + table-->
       <div id="bottomItems"
         class="bottomContainer w-full px-56 absolute flex items-center justify-around bottom-0 invisible">
-        <div class="bottomItem w-28">
+        <div class="bottomItem w-28 ">
           <img class="z-auto" src="assets/images/foundation/halaman2.png" alt="">
         </div>
         <div class="bottomItem w-56 mr-36">
@@ -210,12 +209,13 @@
           <img class="z-auto" src="assets/images/foundation/halaman1.png" alt="">
         </div>
       </div>
+      <!--plants + table-->
       <!--Cards-->
-      <div class="galleryContainer w-full px-56 z-10 py-40 relative">
-        <div id="galleryContainer" class="flex justify-around items-center relative">
+      <div class="fvmContainer w-full px-56 z-10 py-40">
+        <div id="fvmContainer" class="flex justify-around items-center">
           <!--Foundation card-->
           <div id="foundation"
-            class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50">
+            class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
               <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
               </div>
@@ -231,7 +231,7 @@
           </div>
           <!--Vision Card-->
           <div id="vision"
-            class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50">
+            class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
               <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
               </div>
@@ -246,7 +246,7 @@
           </div>
           <!--Mission Card-->
           <div id="mission"
-            class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50">
+            class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
               <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
               </div>
@@ -257,7 +257,6 @@
             <div class="paragraph text-sm text-center mx-3">
               <p>To Contribute Radically on our Customers Success by Providing Technical Services with embedded
                 Excellence and Develop
-
                 Industry Experts.</p>
             </div>
           </div>
@@ -366,8 +365,10 @@
     <!-- EndOfHeading -->
     <!-- containerSvgAndStartUrCareer -->
     <div class="flex mx-auto px-56">
-      <div class=" w-3/6 flex items-center justify-center pr-8">
-        <img class="flex justify-center items-center" src="assets/images/career/hr.png" alt="CareerImage">
+      <div class=" w-1/2 flex mx-auto pr-8">
+        <div class="w-full">
+          <img class="flex justify-center items-center" src="assets/images/career/hr.png" alt="CareerImage">
+        </div>
       </div>
       <div class="w-1/2 flex-col mr-10">
         <div class="title py-4 pt-24">
