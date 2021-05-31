@@ -24,15 +24,20 @@
          const prevBtn = document.createElement('button')
          const prevIcon = document.createElement('img')
          prevIcon.classList.add('prev-control-icon')
-         prevIcon.src = './static/left-chevron.png'
+         // prevIcon.src = './static/left-chevron.png'
          prevBtn.appendChild(prevIcon)
 
          const nextBtn = document.createElement('button')
-         const nextIcon = document.createElement('img')
+         const nextIcon = document.createElement('a')
          nextIcon.classList.add('next-control-icon')
          nextIcon.src = './static/right-chevron.png'
          nextBtn.appendChild(nextIcon)
 
+         const addCloseButton = document.createElement('a')
+         addCloseButton.innerHTML = 'x'
+         addCloseButton.id = 'closeBtn'
+
+         overlay.appendChild(addCloseButton)
          overlay.appendChild(prevBtn)
          overlay.appendChild(nextBtn)
          _addPrevControlAction(prevBtn)

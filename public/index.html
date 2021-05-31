@@ -15,26 +15,25 @@
 <body>
   <!-- Navbar + hero -->
   <!-- || right side for responsive-->
-  <nav class="w-full flex flex-wrap items-center justify-between  || xxs:p-5 xxs:sticky xxs:shadow-lg">
-    <div class="w-full firsthalf relative flex px-56 py-4 || xxs:px-0 xxs:py-2">
-      <div class="w-1/2 || ">
+  <nav class="w-full flex flex-wrap items-center justify-between  || xxs:px-3 xxs:sticky xxs:shadow-lg ||">
+    <div class="w-full firsthalf relative flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2">
+      <div class="w-1/2 || xxs:w-full || sm:w-full">
         <div class="traceservIconContainer w-full items-center">
-          <img class="w-2/6 || xxs:w-full" src="assets/images/icon/traceserv.png" alt="TraceservIcon">
+          <img class="w-2/6 || xxs:w-full" src="assets/images/icon/traceserv.png" alt="TraceservIcon" id="logo">
         </div>
       </div>
-      <div class="w-1/2 flex md:hidden items-center justify-end relative">
-        <button id="hamburger" class="animate__animated">
-          <span style="color:#7276E8">
-            <div class="relative right-10 bottom-5">
-              <i id="burger" class="fas fa-bars fa-2x absolute"></i>
-              <i id="close" class="fas fa-times fa-2x absolute showCross"></i>
-            </div>
-          </span>
-        </button>
+      <div class="w-1/2 md:hidden flex items-center justify-end">
+        <div id="logo" class="wrapper">
+          <div class="circle icon relative w-44 h-14">
+            <div class=" line top w-8 h-2 absolute"></div>
+            <div class="line mid w-8 h-2 absolute"></div>
+            <div class="line bot w-8 h-2 absolute"></div>
+          </div>
+        </div>
       </div>
 
       <div class="w-1/2 links flex font-bold text-white z-50 items-center justify-between || xxs:text-black
-            xxs:hidden xxs:z-10">
+            xxs:hidden xxs:z-10 || sm:hidden">
         <a class="" href="index.html">Home</a>
         <!--Dropdown About us-->
         <div class="relative inline-block text-left">
@@ -69,26 +68,26 @@
         <a class="" href="careers.html">Careers</a>
       </div>
     </div>
-    <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden">
+    <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden">
       <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
     </div>
     </div>
     <!--Navlik xxs + sm + md -->
-    <div id="dropdown" class="navlink w-full bg-primary relative text-white flex-col px-10 py-2 hidden z-50">
+    <div id="dropdown" class="navlink w-full text-black text-center flex-col py-2 hidden z-49 relative mx-auto">
       <div class="w-1/2 links flex-col">
         <div>
-          <a class="hover:text-yellow-500" href="#">Home</a>
+          <a class="hover:text-primary" href="#">Home</a>
         </div>
         <div>
           <div class="relative inline-block text-left absolute">
             <div class="">
-              <a href="#" class="hover:text-yellow-300 menu-item" id="menu-button" aria-expanded="true"
+              <a href="#" class="hover:text-primary menu-item" id="menu-button" aria-expanded="true"
                 aria-haspopup="true">
                 About us
               </a>
             </div>
             <div id="aboutusmenu"
-              class="origin-top-right relative hidden mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none menu"
+              class="origin-top-right relative mt-2 w-56 z-50 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none menu"
               id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
               <div class="py-1" role="none">
                 <a href="#briefHistory" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
@@ -108,13 +107,13 @@
           </div>
         </div>
         <div>
-          <a class="hover:text-yellow-500" href="#">Services</a>
+          <a class="hover:text-primary" href="#">Services</a>
         </div>
         <div>
-          <a class="hover:text-yellow-500" href="#">Community</a>
+          <a class="hover:text-primary" href="#">Community</a>
         </div>
         <div>
-          <a class="hover:text-yellow-500" href="#">Careers</a>
+          <a class="hover:text-primary" href="#">Careers</a>
         </div>
       </div>
     </div>
@@ -124,13 +123,14 @@
 
   <!--hero-->
   <section class="w-full py-10">
-    <div class="flex px-56 || xxs:px-1 xxs:flex-col xxs:mx-auto">
-      <div class="w-1/2 py-32 || xxs:w-full xxs:py-1 xxs:text-center xxs:mx-auto">
-        <h1 class="text-primary font-extrabold text-4xl font-roboto || xxs:text-2xl">Technology Radical And <br>
+    <div class="flex px-56 || xxs:px-1 xxs:flex-col xxs:mx-auto || sm:px-4 xxs:flex-col xxs:mx-auto">
+      <div
+        class="w-1/2 py-32 || xxs:w-full xxs:py-1 xxs:text-center xxs:mx-auto || sm:w-full sm:py-2 sm:text-center xxs:mx-auto">
+        <h1 class="text-primary font-extrabold text-4xl font-roboto || xxs:text-2xl ">Technology Radical And <br>
           Customer
           Excellence
           Services </h1>
-        <div class="w-8/12 || xxs:w-full xxs:mx-auto xxs:px-2">
+        <div class="w-8/12 || xxs:w-full xxs:mx-auto xxs:px-2 || sm:mx-auto sm:px-4 sm:w-full">
           <p class="text-base italic pt-2 text-justify">Lorem ipsum dolor sit amet,
             consectetur
             adipiscing
@@ -145,7 +145,7 @@
           </div>
         </button>
       </div>
-      <div class="w-7/12 z-10 mx-auto || xxs:w-full xxs:mx-auto xxs:flex xxs:items-center xxs:hidden">
+      <div class="w-7/12 z-10 mx-auto || xxs:w-full xxs:mx-auto xxs:flex xxs:items-center xxs:hidden || sm:hidden">
         <div class="w-full">
           <img src="assets/images/svg/banner.svg" alt="" class="object-fill z-50">
         </div>
@@ -155,25 +155,30 @@
   <!--hero-->
 
   <!-- About Us -->
-  <section class="w-full mx-auto py-36 px-56 || xxs:px-1 xxs:py-1">
-    <div class="flex space-x-36 || xxs:flex-col xxs:space-x-0">
+  <section class="w-full mx-auto py-36 px-56 || xxs:px-1 xxs:py-1 || sm:p-1">
+    <div
+      class="flex space-x-36 || xxs:flex-col-reverse xxs:p-2 xxs:space-x-0 || sm:flex-col-reverse sm:p-3 sm:space-x-0">
       <!-- column 1-->
-      <div class="w-1/2 || xxs:w-full">
-        <div class="flex bg-primary w-40 justify-center font-bold mb-4 tracking-wide shadow-lg || xxs:w-full">
+      <div class="w-1/2 || xxs:w-full || sm:w-full">
+        <div
+          class="flex bg-primary w-40 justify-center font-bold mb-4 tracking-wide shadow-lg || xxs:w-full || sm:w-full">
           <h3 class="text-white text-xl items-center uppercase tracking-widest">About us</h3>
         </div>
-        <h1 class="font-bold text-primary capitalize italic text-3xl mb-8 || xxs:text-xl xxs:text-center">Our Brief
+        <h1
+          class="font-bold text-primary capitalize italic text-3xl mb-8 || xxs:text-xl xxs:text-center || sm:text-3xl sm:text-center">
+          Our Brief
           History and Core
           Values
         </h1>
         <!--item 1 start-->
-        <div class="items || xxs:px-3">
+        <div class="items || xxs:px-3 || sm:px-3">
           <div class="flex items-center space-x-2 ">
             <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
             <h6 class="text-xl text-primary font-bold tracking-wide capitalize" id="briefHistory">Brief history</h6>
           </div>
           <div>
-            <p class="text-justify text-lg text-gray-700 pt-6 || xxs:text-sm xxs:pt-2">We trace our beginnings from year
+            <p class="text-justify text-lg text-gray-700 pt-6 || xxs:text-sm xxs:pt-2 || sm:text-md sm:pt-2">We trace
+              our beginnings from year
               2009 as
               a collaboration
               of
@@ -185,9 +190,10 @@
               capability to evaluate and organize their internal IT department to enable and operate their IT
               requirements
               and resources. <span class="text-primary"><button id="seeMore" type="button" href=""
-                  class="font-semibold || xxs:text-sm">See
+                  class="font-semibold || xxs:text-sm || sm:text-md">See
                   more...</button></span>
-            <p class="par2 hidden text-justify text-lg text-gray-700 mt-4 || xxs:text-sm">For the past years the group
+            <p class="par2 hidden text-justify text-lg text-gray-700 mt-4 || xxs:text-sm || sm:text-md">For the past
+              years the group
               is
               successfuly
               serving
@@ -205,13 +211,14 @@
         </div>
         <!-- item 1 end-->
 
-        <div class="items pt-4 || xxs:pb-14 xxs:px-3">
+        <div class="items pt-4 || xxs:pb-14 xxs:px-3 || sm:pb-14 sm:px-3">
           <div class="wrapper flex items-center space-x-2 ||">
             <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
             <h6 class="text-xl text-primary font-bold tracking-wide capitalize" id="coreValues">Core Values</h6>
           </div>
 
-          <p class="text-justify text-lg text-gray-700 pt-6 || xxs:text-sm xxs:pt-2">Our customers are the Reason of Our
+          <p class="text-justify text-lg text-gray-700 pt-6 || xxs:text-sm xxs:pt-2 || sm:text-md sm:pt-2">Our customers
+            are the Reason of Our
             Existence, Our
             Employees and
             Partners
@@ -224,7 +231,7 @@
       <!-- column 1 -->
 
       <!-- column 2 -->
-      <div class="w-1/2 || xxs:hidden">
+      <div class="w-1/2 || xxs:w-full xxs:p-3 || sm:w-full sm:p-3">
         <img src="assets/images/about/about.png" alt="" class="object-fill w-full">
       </div>
       <!-- column 2 -->
@@ -234,12 +241,12 @@
 
   <!-- GalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGallery -->
   <section id="galleryContainer" class="flex-col w-full mx-auto pt-4 pb-32 bgGradientGallery">
-    <div class="container bg-white w-40 mx-auto p-2 my-8 shadow-lg || xxs:w-28 xxs:p-1">
-      <p class="text-primary text-center text-xl font-bold uppercase || xxs:text-md">Gallery</p>
+    <div class="container bg-white w-40 mx-auto p-2 my-8 shadow-lg || xxs:w-28 xxs:p-1 || sm:w-30 sm:p-1 ">
+      <p class="text-primary text-center text-xl font-bold uppercase || xxs:text-md || sm:text-md">Gallery</p>
     </div>
-    <div class="w-full px-56 || xxs:px-3">
+    <div class="w-full px-56 || xxs:px-3 || sm:px-20">
       <div class="pictureContainer bg-white w-full relative flex items-center justify-center p-2">
-        <div id="gallery">
+        <div id="gallery" class="object-fit">
         </div>
       </div>
     </div>
@@ -252,7 +259,7 @@
       <!--FVM Container-->
       <!--lights-->
       <div id="upperItems"
-        class="lightsContainer w-full absolute px-56 flex items-center justify-around z-0 top-0 invisible || xxs:hidden">
+        class="lightsContainer w-full absolute px-56 flex items-center justify-around z-0 top-0 invisible || xxs:hidden || sm:hidden">
         <div class="light w-40">
           <img class="" src="assets/images/foundation/ilaw.png" alt="">
         </div>
@@ -266,7 +273,7 @@
       <!--lights-->
       <!--plants + table-->
       <div id="bottomItems"
-        class="bottomContainer w-full px-56 absolute flex items-center justify-around bottom-0 invisible xxs:hidden">
+        class="bottomContainer w-full px-56 absolute flex items-center justify-around bottom-0 invisible || xxs:hidden || sm:hidden">
         <div class="bottomItem w-28 ">
           <img class="z-auto" src="assets/images/foundation/halaman2.png" alt="">
         </div>
@@ -443,9 +450,10 @@
     <!-- EndOfHeading -->
     <!-- containerSvgAndStartUrCareer -->
     <div class="flex mx-auto px-56 || xxs:px-0 xxs:flex-col xxs:mx-auto">
-      <div class=" w-1/2 flex mx-auto pr-8 || xxs:hidden">
+      <div class=" w-1/2 flex mx-auto pr-8 || xxs:pr-0 xxs:px-5 xxs:flex-col xxs:w-full">
         <div class="w-full">
-          <img class="flex justify-center items-center" src="assets/images/career/hr.png" alt="CareerImage">
+          <img class="flex justify-center items-center object-fit w-full" src="assets/images/career/hr.png"
+            alt="CareerImage">
         </div>
       </div>
       <div

@@ -14,6 +14,7 @@ module.exports = {
          },
          screens: {
             xxs: {max: '639px'},
+            sm: {max: '767px'},
          },
       },
    },

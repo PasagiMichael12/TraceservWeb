@@ -5,14 +5,16 @@ $(document).ready(() => {
    })
    /* Navbar About us*/
    /* Burger Menu */
-   $('#hamburger').on('click', () => {
-      $('#burger').toggleClass('rotateY showBurger ')
-      $('#close').toggleClass('showCross rotateY')
+   $('.wrapper').on('click', () => {
+      $('.circle').toggleClass('close')
    })
 
+   $('#closeBtn').on('click', () => {
+      $('#overlay').toggleClass('active')
+   })
    /* Burger Menu */
    /* Dropdown */
-   $('#hamburger').on('click', () => {
+   $('.wrapper').on('click', () => {
       let isHidden = $('#dropdown').is(':hidden')
       if (isHidden) {
          $('#dropdown').removeClass('hidden')
