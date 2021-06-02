@@ -16,17 +16,18 @@
   <!-- Navbar + hero -->
   <!-- || right side for responsive-->
   <nav class="w-full flex flex-wrap items-center justify-between  || xxs:px-3 xxs:sticky xxs:shadow-lg || 
-   md:px-3 md:sticky || lg:px-0 lg:sticky">
+   md:px-3 md:sticky || lg:px-0 lg:sticky || ">
     <div
-      class="w-full firsthalf relative flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 ||">
+      class="w-full firsthalf relative flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
       <div class="w-1/2 || xxs:w-full || sm:w-full ">
-        <div class="traceservIconContainer w-full items-center">
-          <img class="w-2/6 || xxs:w-full || md:w-1/6 || lg:w-8/12" src="assets/images/icon/traceserv.png"
-            alt="TraceservIcon" id="logo">
+        <div class="traceservIconContainer w-full items-center || xxs:w-full || sm:w-full">
+          <img class="animate__animated animate__fadeInLeft" src="assets/images/icon/traceserv.png" alt="TraceservIcon"
+            id="logo">
         </div>
       </div>
       <!--Burger-->
-      <div class="w-1/2 md:hidden flex items-center justify-end">
+      <div class="w-1/2 flex items-center justify-end || xxs:block xxs:flex xxs:justify-end || sm:block sm:flex sm:justify-end  
+          || md:block md:flex md:justify-end || lg:hidden || xl:hidden || 2xl:hidden || ">
         <div id="logo" class="wrapper">
           <div class="circle icon relative w-44 h-14">
             <div class=" line top w-8 h-2 absolute"></div>
@@ -37,8 +38,9 @@
       </div>
       <!--Burger-->
 
-      <div class="w-1/2 links flex font-bold text-white z-50 items-center justify-around || xxs:text-black
-            xxs:hidden xxs:z-10 || sm:hidden || md:w-2/3 md:text-sm|| lg:space-x-10 lg:text-base">
+      <div
+        class="w-1/2 links flex font-bold text-white z-50 items-center justify-around || xxs:text-black
+            xxs:hidden xxs:z-10 || sm:hidden || md:hidden || lg:space-x-10 lg:text-base || animate__animated animate__fadeInDown">
         <a class="" href="index.html">Home</a>
         <!--Dropdown About us-->
         <div class="relative inline-block text-left">
@@ -73,8 +75,7 @@
         <a class="" href="careers.html">Careers</a>
       </div>
     </div>
-    <div
-      class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:z-0 md:w-9/12">
+    <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:hidden">
       <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
     </div>
     </div>
@@ -127,11 +128,12 @@
   </nav>
 
   <!--hero-->
-  <section class="w-full py-10 || lg:py-8 ">
+  <section class="w-full py-10 || lg:py-6 ">
     <div class="flex px-56 || xxs:px-1 xxs:flex-col xxs:mx-auto || sm:px-4 sm:flex-col sm:mx-auto ||
-    md:px-4 md:flex md:mx-auto || lg:flex">
-      <div class="w-1/2 py-32 || xxs:w-full xxs:py-1 xxs:text-center xxs:mx-auto || sm:w-full sm:py-2 sm:text-center sm:mx-auto
-          || md:w-1/2 md:py-4 md:text-center || lg:py-8 lg:w-full">
+    md:px-4 md:flex md:mx-auto || lg:flex lg:px-16">
+      <div
+        class="w-1/2 py-32 || xxs:w-full xxs:py-1 xxs:text-center xxs:mx-auto || sm:w-full sm:py-2 sm:text-center sm:mx-auto
+          || md:w-full md:py-4 md:text-center || lg:py-10 lg:w-full || xl:py-14 || animate__animated animate__fadeInLeft">
         <div class="md:text-center">
           <h1 class="text-primary font-extrabold text-4xl font-roboto || xxs:text-2xl || md:text-2xl || lg:text-3xl">
             Technology Radical
@@ -151,7 +153,7 @@
             Aliquam at
             porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
         </div>
-        <button class="text-white mt-8 || md:mt-4">
+        <button class="text-white mt-8 ">
           <div
             class="buttonContainer bg-primary hover:bg-blue-600 w-44 p-2 rounded flex items-center justify-center text-md ">
             Business Info Cycle
@@ -159,9 +161,9 @@
         </button>
       </div>
       <div class="w-7/12 z-10 mx-auto || xxs:w-full xxs:mx-auto xxs:flex xxs:items-center xxs:hidden || sm:hidden || 
-          md:z-10 md:mx-auto md:w-7/12 md:pr-16 || lg:z-10 lg:mx-auto lg:w-full">
-        <div class="w-full">
-          <img src="assets/images/svg/banner.svg" alt="" class="object-fill z-50 || md:object-fill md:z-50">
+          md:hidden || lg:z-10 lg:mx-auto lg:w-full lg:mr-14 || animate__animated animate__fadeInRight">
+        <div class="w-full animate__animated animate__fadeInDown">
+          <img src="assets/images/svg/banner.svg" alt="" class="object-fill z-50 ">
         </div>
       </div>
     </div>
@@ -169,23 +171,27 @@
   <!--hero-->
 
   <!-- About Us -->
-  <section class="w-full mx-auto py-36 px-56 || xxs:px-1 xxs:py-1 || sm:p-1 || md:py-8 md:mx-auto md:px-10">
-    <div
-      class="flex || xxs:flex-col-reverse xxs:p-2 xxs:space-x-0 || sm:flex-col-reverse sm:p-3 sm:space-x-0 || space-x-12">
+  <section class="w-full mx-auto py-36 px-56 || xxs:px-1 xxs:py-1 || sm:p-1 || md:py-8 md:mx-auto md:px-0
+    || lg:px-16">
+    <div class="flex || xxs:flex-col-reverse xxs:p-2 xxs:space-x-0 || sm:flex-col-reverse sm:p-3 sm:space-x-0 || md:flex-col-reverse md:mx-auto 
+        || lg:space-x-8 || xl:space-x-8 || 2xl:space-x-12">
       <!-- column 1-->
-      <div class="w-1/2 || xxs:w-full || sm:w-full">
+      <div class="w-1/2 || xxs:w-full || sm:w-full || md:w-full">
         <div
-          class="flex bg-primary w-40 justify-center font-bold mb-4 tracking-wide shadow-lg p-2 || xxs:w-full || sm:w-full">
+          class="flex bg-primary w-40 justify-center font-bold mb-4 tracking-wide shadow-lg p-2 || xxs:w-full || sm:w-full || md:mx-auto">
           <h3 class="text-white text-xl items-center uppercase tracking-widest">About us</h3>
         </div>
-        <h1
-          class="font-bold text-primary capitalize italic text-3xl mb-8 || xxs:text-xl xxs:text-center || sm:text-3xl sm:text-center || md:text-3xl || lg:text-">
-          Our Brief
-          History and Core
-          Values
-        </h1>
+        <div class="mx-auto || md:text-center">
+          <h1
+            class="font-bold text-primary capitalize italic text-3xl mb-8 || xxs:text-xl xxs:text-center || sm:text-3xl sm:text-center || md:text-3xl || ">
+            Our Brief
+            History and Core
+            Values
+          </h1>
+        </div>
+
         <!--item 1 start-->
-        <div class="items || xxs:px-3 || sm:px-3">
+        <div class="items || xxs:px-3 || sm:px-3 || md:px-10">
           <div class="flex items-center space-x-2 ">
             <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
             <h6 class="text-xl text-primary font-bold tracking-wide capitalize" id="briefHistory">Brief history</h6>
@@ -228,7 +234,7 @@
         </div>
         <!-- item 1 end-->
 
-        <div class="items pt-4 || xxs:pb-14 xxs:px-3 || sm:pb-14 sm:px-3 ">
+        <div class="items pt-4 || xxs:pb-14 xxs:px-3 || sm:pb-14 sm:px-3 || md:px-10">
           <div class="wrapper flex||">
             <div class="flex space-x-2">
               <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
@@ -252,7 +258,7 @@
       <!-- column 1 -->
 
       <!-- column 2 -->
-      <div class="w-1/2 my-auto || xxs:w-full xxs:p-3 || sm:w-full sm:p-3 || ">
+      <div class="w-1/2 my-auto || xxs:w-full xxs:p-3 || sm:w-full sm:p-3 || md:mx-auto md:p-3">
         <img src="assets/images/about/about.png" alt="" class="object-fill w-full">
       </div>
       <!-- column 2 -->
@@ -267,7 +273,7 @@
       <p class="text-primary text-center text-xl font-bold uppercase || xxs:text-md || sm:text-md">Gallery</p>
     </div>
     <div class="w-full px-56 || xxs:px-3 || sm:px-20 || md:w-full md:px-24">
-      <div class="pictureContainer bg-white w-full relative flex items-center justify-center p-2">
+      <div class="pictureContainer bg-white w-full relative flex items-center justify-center p-2 ||">
         <div id="gallery" class="object-fit">
         </div>
       </div>
@@ -280,8 +286,8 @@
     <div class="foundationContainer relative">
       <!--FVM Container-->
       <!--lights-->
-      <div id="upperItems" class="lightsContainer w-full absolute px-56 flex items-center justify-around z-0 top-0 invisible || xxs:hidden || sm:hidden 
-          || md:px-10 md:flex ">
+      <div id="upperItems" class="lightsContainer w-full absolute px-56 flex items-center justify-around z-0 top-0 invisible || xxs:hidden || sm:hidden || md:hidden
+          || md:px-10 md:flex || lg:flex lg:justify-around lg:px-10 ">
         <div class="light w-40">
           <img class="" src="assets/images/foundation/ilaw.png" alt="">
         </div>
@@ -294,8 +300,8 @@
       </div>
       <!--lights-->
       <!--plants + table-->
-      <div id="bottomItems" class="bottomContainer w-full px-56 absolute flex items-center justify-around bottom-0 invisible || xxs:hidden || sm:hidden
-          || md:px-10 md:flex ">
+      <div id="bottomItems" class="bottomContainer w-full px-56 absolute flex items-center justify-around bottom-0 invisible || xxs:hidden || sm:hidden || md:hidden
+          || md:px-10 md:flex || lg:flex lg:justify-around lg:px-10">
         <div class="bottomItem w-28 ">
           <img class="z-auto" src="assets/images/foundation/halaman2.png" alt="">
         </div>
@@ -309,12 +315,12 @@
       <!--plants + table-->
       <!--Cards-->
       <div class="fvmContainer w-full px-56 z-10 py-40 || xxs:px-0 xxs:mx-auto xxs:py-10 || sm:px-0 sm:mx-auto sm:py-10
-          || md:px-10 md:mx-auto md:py-40">
+          || md:px-10 md:mx-auto md:py-40 || lg:px-14">
         <div id="fvmContainer"
-          class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 xxs:mx-auto || sm:flex-col sm:space-y-4 sm:mx-auto || lg:space-x-10">
+          class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 xxs:mx-auto || sm:flex-col sm:space-y-4 sm:mx-auto || md:flex-col md:space-y-4 ||  lg:space-x-16 || xl:space-x-10">
           <!--Foundation card-->
           <div id="foundation" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center 
-            justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out || xxs:w-4/5 || lg:w-1/2">
+            justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out || xxs:w-4/5 || || lg:w-1/2">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
               <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
               </div>
@@ -377,10 +383,11 @@
           services</p>
       </div>
       <!-- Cards -->
-      <div class="py-20 mx-40 || xxs:mx-auto xxs:py-10 || sm:mx-auto sm:py-10 || md:mx-10 md:py-20">
+      <div
+        class="py-20 mx-40 || xxs:mx-auto xxs:py-10 || sm:mx-auto sm:py-10 || md:mx-10 md:py-10 || lg:mx-16 lg:py-10">
         <div class="items-center text-center text-primary font-bold text-2xl">
-          <div
-            class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 || sm:flex-col sm:space-y-4 || lg:space-x-10">
+          <div class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 || sm:flex-col sm:space-y-4 
+           || md:flex-col md:space-y-4 || lg:space-x-6">
             <div id="cardOne"
               class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
               <p>IT Service and Quality Management Consulting</p>
@@ -390,7 +397,8 @@
                 help customer
                 improve their Business
                 Efficiency
-                and Capacity using International Standard and Best Practices Methods like ITIL, ISO, Lean Six Sigma and
+                and Capacity using International Standard and Best Practices Methods like ITIL, ISO, Lean Six Sigma
+                and
                 others.</p>
             </div>
             <div id="cardTwo"
@@ -401,11 +409,12 @@
                 IT needs from
                 helping the customer
                 decide which computer(s) to buy and where to buy them, building their office network, to providing
-                support for internet connection problems and desktop concerns such as application installation, files
+                support for internet connection problems and desktop concerns such as application installation,
+                files
                 backup, windows OS troubleshooting and others.</p>
             </div>
-            <div id="cardThree"
-              class="h-96 w-80 bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5 xxs:px-8">
+            <div id="cardThree" class="h-96 w-80 bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5 xxs:px-8
+               ">
               <p>System and Network Design, Development, Implementation, Administration and Optimization</p>
               <p class="hidden text-center text-sm font-normal || ">Custom fit systems/application
                 software
@@ -414,15 +423,18 @@
                 customers requirements
                 from complex
                 enterprise portal to simple web page design. Designing customers IT infrastructure to support their
-                business needs, implementing customers own design for their internal use for their client requirements,
-                Integrating new system or network with their existing infrastructure, monitoring and improving customers
+                business needs, implementing customers own design for their internal use for their client
+                requirements,
+                Integrating new system or network with their existing infrastructure, monitoring and improving
+                customers
                 systems and networks availability.</p>
             </div>
           </div>
         </div>
-        <div class="items-center text-center text-primary font-bold text-2xl mt-24 || xxs:mt-4 || sm:mt-4">
-          <div
-            class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 || sm:flex-col sm:space-y-4 || lg:space-x-10">
+        <div
+          class="items-center text-center text-primary font-bold text-2xl mt-24 || xxs:mt-4 || sm:mt-4 || md:mt-4 lg:mt-4 xl:mt-14">
+          <div class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 || sm:flex-col sm:space-y-4 
+           || md:flex-col md:space-y-4 || lg:space-x-6">
             <div id="cardFour"
               class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
               <p>Personal Computer and Server Administration</p>
@@ -477,11 +489,11 @@
     <!-- EndOfHeading -->
     <!-- containerSvgAndStartUrCareer -->
     <div class="flex mx-auto px-56 || xxs:px-0 xxs:flex-col xxs:mx-auto || sm:px-0 sm:flex-col sm:mx-auto || md:px-0 md:flex-col md:mx-auto
-       || lg:flex-col">
+       || lg:flex-col || xl:flex ">
       <div class=" w-1/2 flex mx-auto pr-8 || xxs:pr-0 xxs:px-5 xxs:flex-col xxs:w-full 
       || sm:pr-0 sm:px-5 sm:flex-col sm:w-1/2 sm:pt-3
-          md:w-5/12 || lg:w-5/12">
-        <div class="w-full || md:pt-12">
+          md:w-5/12 || lg:w-10/12 xl:w-10/12">
+        <div class="w-full || md:pt-12 || lg:pt-8 || xl:pt-10 || 2xl:pt-10">
           <img class="flex justify-center items-center object-fit w-full" src="assets/images/career/hr.png"
             alt="CareerImage">
         </div>
@@ -489,14 +501,15 @@
       <div class="w-1/2 flex-col mx-auto mr-10 || xxs:w-full xxs:mr-0 xxs:text-center xxs:mx-auto xxs:flex xxs:items-center xxs:justify-center 
        || sm:w-full sm:mr-0 sm:text-center sm:mx-auto sm:flex sm:items-center sm:justify-center 
        || md:w-full md:mr-0 md:text-center md:mx-auto md:flex md:items-center md:justify-center 
-        lg:mr-0 lg:text-center lg:w-full">
-        <div
-          class="title py-4 pt-24 || xxs:py-2 xxs:pt-14 || md:text-center md:py-2 || lg:text-center lg:py-2 lg:pt-16">
-          <h3 class="italic text-5xl font-medium font-roboto text-primary || xxs:text-4xl">Start your career with us!
+        lg:mr-0 lg:text-center lg:w-full || xl:w-full xl:text-center xl:mr-0 ">
+        <div class="title py-4 pt-24 || xxs:py-2 xxs:pt-14 || md:text-center md:py-2 || lg:text-center lg:py-2 lg:pt-16
+          lg:text-center lg:py-2 lg:pt-8">
+          <h3 class="italic text-5xl font-medium font-roboto text-primary || xxs:text-4xl || xl:mx-auto">Start your
+            career with us!
           </h3>
         </div>
-        <div
-          class="paragraph  items-center justify-center text-justify tracking-wide leading-relax w-4/6 || xxs:text-center || lg:text-center lg:mx-auto">
+        <div class="paragraph  items-center justify-center text-justify tracking-wide leading-relax w-4/6 || xxs:text-center 
+          || lg:text-center lg:mx-auto lg:w-full || xl:text-center xl:mx-auto xl:w-full ">
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "</p>
         </div>
@@ -513,29 +526,28 @@
   <!-- FooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooter -->
   <footer class="footer w-full shadow-t-lg">
     <div class="footerContainer bg-purple-100 h-44">
-      <div class="wrapper px-56 flex || xxs:flex-col xxs:mx-auto xxs:p-1 || sm:flex-col sm:mx-auto sm:p-1 
-       || md:flex-col md:mx-auto md:p-0 || lg:flex">
+      <div class="wrapper px-56 flex || xxs:flex-col xxs:mx-auto xxs:p-0 xxs:w-full || sm:flex-col sm:mx-auto sm:p-0 sm:w-full
+       || md:flex-col md:mx-auto md:p-0 md:w-full || lg:flex lg:px-16 || xl:flex || 2xl:flex">
         <div class="w-1/2 h-44 flex text-center justify-center items-center || xxs:w-full xxs:h-14 || sm:w-full sm:h-10
-         || md:w-full md:h-16 ">
+         || md:w-full md:h-16 || ">
           <p
-            class="text-lg italic font-semibold font-poppins capitalize || xxs:text-sm || sm:text-sm || md:text-md || lg:text-md">
+            class="text-lg italic font-semibold font-poppins capitalize || xxs:text-sm || sm:text-sm || md:text-md || lg:text-md || xl:text-base">
             technology radical and customer
             excellence
             services</p>
-
         </div>
-        <div class="md:w-full md:bg-secondary">
+        <div class="sm:bg-secondary || md:w-full md:bg-secondary">
           <div class="2ndWrapper w-1/2 flex || xxs:mx-auto xxs:p-0 xxs:w-full xxs:bg-secondary || sm:mx-auto sm:w-full sm:bg-secondary
-         || md:mx-auto md:p-0 md:w-full || lg:w-full ||">
+            || md:mx-auto md:p-0 md:w-full || lg:w-full || xl:w-full || 2xl:w-full">
             <div
-              class="w-1/2 text-right text-base h-44 py-10 || xxs:text-xs || sm:text-sm || md:text-base || lg:py-8 lg:text-sm0">
+              class="w-1/2 text-right text-base h-44 py-10 || xxs:text-xs || sm:text-sm || md:text-base || lg:py-8 lg:text-sm || xl:text-sm xl:py-10 xl:w-full">
               <p>1912 Cityland 10 Tower H.V. Dela Costa St.</p>
               <p>Salcedo Village, Makati City, Philippines</p><br>
               <p>(+632) 219-29-88</p>
             </div>
-            <div class="w-1/2 flex || xxs:h-20">
+            <div class="w-1/2 flex || xxs:h-20 || xl:w-full">
               <div class="block flex-col w-1 h-24 bg-black my-10 mx-2 || xxs:my-10 || sm:my-10 "></div>
-              <div class="my-14 || xxs:py-3 || md:py-auto">
+              <div class="my-14 || xxs:py-3 || md:py-auto || xl:w-full">
                 <img class="w-60" src="assets/images/icon/traceserv.png" alt="">
               </div>
             </div>
