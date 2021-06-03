@@ -12,61 +12,152 @@
 <body>
     <!-- Navbar + hero -->
     <!-- || right side for responsive-->
-    <nav class="">
-        <div class="firsthalf relative flex px-56 py-4 || responsive space for code">
-            <div class="w-1/2 || ">
-                <div class="traceservIconContainer w-full items-center">
-                    <img class="w-3/12" src="assets/images/icon/traceserv.png" alt="TraceservIcon">
+    <nav class="w-full flex flex-wrap items-center justify-between  || xxs:px-3 xxs:sticky xxs:shadow-lg || 
+  md:px-3 md:sticky || lg:px-0 lg:sticky || ">
+        <div
+            class="w-full firsthalf relative flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
+            <div class="w-1/2 || xxs:w-full || sm:w-full ">
+                <div class="traceservIconContainer w-full items-center || xxs:w-full || sm:w-full">
+                    <img class="animate__animated animate__fadeInLeft" src="assets/images/icon/traceserv.png"
+                        alt="TraceservIcon" id="logo">
                 </div>
             </div>
-            <div class="w-1/2 links flex font-bold text-white z-50 items-center justify-between ">
-                <a class="" href="../index.html">Home</a>
+            <!--Burger-->
+            <div class="w-1/2 flex items-center justify-end || xxs:block xxs:flex xxs:justify-end || sm:block sm:flex sm:justify-end  
+         || md:block md:flex md:justify-end || lg:hidden || xl:hidden || 2xl:hidden || ">
+                <div id="logo" class="wrapper">
+                    <div class="circle icon relative w-44 h-14">
+                        <div class=" line top w-8 h-2 absolute"></div>
+                        <div class="line mid w-8 h-2 absolute"></div>
+                        <div class="line bot w-8 h-2 absolute"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Burger-->
+
+            <div
+                class="w-1/2 links flex font-bold text-white z-50 items-center justify-around || xxs:text-black
+           xxs:hidden xxs:z-10 || sm:hidden || md:hidden || lg:space-x-10 lg:text-base || animate__animated animate__fadeInDown ">
+                <a class="" href="index.html">Home</a>
+                <!--Dropdown About us-->
                 <div class="relative inline-block text-left">
                     <div class="">
                         <a href="#" class="hover:text-yellow-300 menu-item" id="menu-button" aria-expanded="true"
                             aria-haspopup="true">
-                            About us
+                            About&nbspus
                         </a>
                     </div>
-                    <div class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none invisible menu"
-                        id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden menu"
+                        id="submenu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                        tabindex="-1">
                         <div class="py-1" role="none">
-                            <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                id="menu-item-0">Brief History</a>
-                            <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                id="menu-item-1">Core Values</a>
-                            <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                id="menu-item-2">Foundation</a>
-                            <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                id="menu-item-3">Vision</a>
-                            <a href="#" class="text-primary block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                id="menu-item-4">Mission</a>
+                            <a href="#briefHistory" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                                role="menuitem" tabindex="-1" id="menu-item-0">Brief History</a>
+                            <a href="#coreValues" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                                role="menuitem" tabindex="-1" id="menu-item-1">Core Values</a>
+                            <a href="#galleryContainer" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                                role="menuitem" tabindex="-1" id="menu-item-0">Gallery</a>
+                            <a href="#foundation" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                                role="menuitem" tabindex="-1" id="menu-item-2">Foundation</a>
+                            <a href="#vision" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                                tabindex="-1" id="menu-item-3">Vision</a>
+                            <a href="#mission" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                                role="menuitem" tabindex="-1" id="menu-item-4">Mission</a>
                         </div>
                     </div>
                 </div>
-                <a class="" href="#">Services</a>
+                <!--Dropdown About us-->
+                <a class="smooth-scroll" href="#services">Services</a>
                 <a class="" href="community.html">Community</a>
                 <a class="" href="careers.html">Careers</a>
             </div>
-            <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12">
-                <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
+        </div>
+        <div
+            class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:hidden">
+            <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
+        </div>
+        </div>
+        <!--start Navlink xxs + sm + md -->
+        <div id="dropdown" class="navlink w-full text-black text-center flex-col py-2 hidden z-49 relative mx-auto
+      xxs:mx-auto sm:mx-auto xxs:hidden
+       md:hidden lg:hidden xl:hidden 2xl:hidden">
+            <div class="w-full links flex-col xxs:mx-auto sm:mx-auto">
+                <div>
+                    <a class="hover:text-primary" href="index.html">Home</a>
+                </div>
+                <div class="">
+                    <div class="xxs:mx-auto ">
+                        <!-- relative inline-block text-center absolute -->
+                        <div class="">
+                            <a href="#" class="hover:text-primary menu-item" id="menu-button2" aria-expanded="true"
+                                aria-haspopup="true">
+                                About us
+                            </a>
+                        </div>
+                        <div id="submenu2" class="origin-top-right relative mt-2 w-full z-50 rounded-md bg-white shadow-inner 
+           ring-1 ring-black ring-opacity-5 focus:outline-none menu-item mx-auto || xxs:mx-auto xxs:w-full
+             xxs:hidden sm:mx-auto sm:hidden md:hidden" role="menu" aria-orientation="vertical"
+                            aria-labelledby="menu-button2" tabindex="-1">
+                            <div class="xxs:mx-auto" role="none">
+                                <a href="#briefHistory"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-0">Brief History</a>
+                                <a href="#coreValues"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-1">Core Values</a>
+                                <a href="#galleryContainer"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-0">Gallery</a>
+                                <a href="#foundation"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-2">Foundation</a>
+                                <a href="#vision"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-3">Vision</a>
+                                <a href="#mission"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-4">Mission</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a class="hover:text-primary" href="#services">Services</a>
+                </div>
+                <div>
+                    <a class="hover:text-primary" href="community.html">Community</a>
+                </div>
+                <div>
+                    <a class="hover:text-primary" href="careers.html">Careers</a>
+                </div>
             </div>
         </div>
+        <!--end Navlink xxs + sm + md -->
     </nav>
     <!--hero-->
-    <section class="w-full py-16">
-        <div class="flex px-56">
-            <div class="w-1/2 py-32">
-                <h1 class="text-primary font-semibold text-5xl font-roboto uppercase left-0">Build your<h1
-                        class="text-primary font-bold text-8xl font-roboto uppercase left-0">Career</h1>
+    <section class="w-full py-16 || xxs:py-0 || sm:py-0 || md:py-0 || lg:py-0">
+        <div
+            class="flex px-56 || xxs:px-10 xxs:py-12 xxs:text-center xxs:flex-col-reverse xxs:bg-purple-500 || sm:px-10 sm:py-12 sm:text-center sm:flex-col-reverse sm:bg-purple-500 || md:px-10 md:py-12 md:text-center md:flex-col-reverse md:bg-purple-500">
+            <div
+                class="w-1/2 py-32 || xxs:w-full xxs:py-0 || sm:w-full sm:py-0 || md:w-full md:py-0 || lg:w-full lg:mx-auto">
+                <h1
+                    class="text-primary font-semibold text-5xl font-roboto uppercase left-0 || xxs:text-4xl xxs:text-white || sm:text-5xl sm:text-white || md:text-5xl md:text-white">
+                    Build your
+                    <h1
+                        class="text-primary font-bold text-8xl font-roboto uppercase left-0 || xxs:text-6xl xxs:text-white || sm:text-7xl sm:text-white || md:text-7xl md:text-white">
+                        Career</h1>
                 </h1>
-                <div class="w-full flex items-center ">
-                    <p class="text-3xl  text-justify tracking-wider">Work and be </p>
-                    <h1 class="text-3xl italic font-bold tracking-wider pl-2"> YOURSELF</h1>
+                <div
+                    class="w-full flex items-center || xxs:flex-col || sm:flex sm:w-full sm:justify-center || md:flex md:w-full md:justify-center">
+                    <p
+                        class="text-3xl  text-justify tracking-wider || xxs:text-xl xxs:tracking-wide xxs:text-center || sm:text-xl sm:tracking-wide sm:text-center || md:text-xl md:tracking-wide md:text-center ">
+                        Work and be </p>
+                    <h1 class="text-3xl italic font-bold tracking-wider pl-2 || xxs:not-italic"> YOURSELF</h1>
 
                 </div>
             </div>
-            <div class="w-7/12 z-10 flex justify-end items-center">
+            <div
+                class="w-7/12 z-10 flex justify-end items-center || xxs:w-full xxs:mx-auto xxs:pr-5 || sm:w-full sm:mx-auto sm:pr-14 || md:w-full md:mx-auto md:pr-14 || lg:w-full lg:mx-auto">
                 <div class="w-9/12">
                     <img src="assets/images/svg/opisina.svg" alt="" class="object-fill z-50">
                 </div>
@@ -75,10 +166,12 @@
     </section>
 
     <!-- Buttons -->
-    <section class="w-full mx-auto py-20 px-56 h-screen">
-        <div id="buttons" class="flex space-x-6 || responsive space for code">
+    <section
+        class="w-full mx-auto py-20 px-56 h-screen || xxs:px-0 xxs:py-3 xxs:mb-24 || sm:px-10 sm:py-3 sm:mb-80 || md:px-10 md:py-3 md:mb-20">
+        <div id="buttons"
+            class="flex space-x-6 || xxs:flex-col xxs:items-center xxs:mx-auto xxs:space-x-0 xxs:space-y-3 || sm:space-x-5 || md:justify-around">
             <a type="button" id="btnNetwork"
-                class="button text-white uppercase font-bold bg-primary hover:bg-blue-600 rounded-md text-center w-44 p-2 rounded text-xl tracking-wider z-50">
+                class="button text-white uppercase font-bold bg-primary hover:bg-blue-600 rounded-md text-center w-44 p-2 rounded text-xl tracking-wider z-50 ||">
                 Network
             </a>
             <a type="button" id="btnEnterprise"
@@ -90,64 +183,81 @@
                 Governance
             </a>
         </div>
-        <div class="careerPanel w-full flex py-10">
-            <div id="cne" class="engineerCards flex hidden">
-                <div class="CadetNetworkEngineerContainer w-1/3">
-                    <div class="w-full bg-primary h-4"></div>
-                    <div class="cneContainer p-10 bg-secondary">
-                        <div class="title pb-2">
-                            <p class="uppercase text-lg font-semibold">cadet network engineer</p>
-                        </div>
-                        <div class="paragraph">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
-                                Aliquam
-                                erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-                        </div>
-                        <div class="locationContainer pt-2">
-                            <div class="container flex items-center">
-                                <i class="fas fa-map-marker-alt fa-2x" style="color:#7276e8;"></i>
-                                <p class="capitalize text-primary px-1">Metro manila, Philippines</p>
+        <div class="careerPanel w-full flex py-5">
+            <div id="cne" class="hidden">
+                <div
+                    class="engineerCards flex || xxs:flex-col xxs:px-8 || sm:flex-col sm:px-8 sm:items-center || md:flex md:items-center ">
+                    <div
+                        class="CadetNetworkEngineerContainer w-1/3 || xxs:w-full xxs:mx-auto || sm:w-full sm:mx-auto || md:w-1/2 md:mx-auto">
+                        <div class="w-full bg-primary h-4"></div>
+                        <div class="cneContainer p-10 bg-secondary">
+                            <div class="title pb-2">
+                                <p
+                                    class="uppercase text-lg font-semibold || xxs:text-center || sm:text-center || md:text-center">
+                                    cadet
+                                    network engineer</p>
                             </div>
-                        </div>
-                        <div class="viewContainer flex justify-end">
-                            <a href="careerPages/cadetNetwork.html" class="text-primary font-bold italic uppercase">View
-                                More...</a>
+                            <div class="paragraph || xxs:hidden">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+                                    Aliquam
+                                    erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+                            </div>
+                            <div class="locationContainer pt-2">
+                                <div class="container flex items-center">
+                                    <i class="fas fa-map-marker-alt fa-2x" style="color:#7276e8;"></i>
+                                    <p class="capitalize text-primary px-1 || xxs:text-xs || sm:text-xs || md:text-sm">
+                                        Metro manila,
+                                        Philippines</p>
+                                </div>
+                            </div>
+                            <div class="viewContainer flex justify-end || xxs:justify-center">
+                                <a href="careerPages/cadetNetwork.html"
+                                    class="text-primary font-bold italic uppercase">View
+                                    More...</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="CadetNetworkEngineerContainer w-1/3 ml-8">
-                    <div class="w-full bg-primary h-4"></div>
-                    <div class="cneContainer p-10 bg-secondary">
-                        <div class="title pb-2">
-                            <p class="uppercase text-lg font-semibold">network engineer</p>
-                        </div>
-                        <div class="paragraph">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
-                                Aliquam
-                                erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-                        </div>
-                        <div class="locationContainer pt-2">
-                            <div class="container flex items-center">
-                                <i class="fas fa-map-marker-alt fa-2x" style="color:#7276e8;"></i>
-                                <p class="capitalize text-primary px-1">Metro manila, Philippines</p>
+                    <div
+                        class="NetworkContainer w-1/3 ml-8 || xxs:w-full xxs:ml-0 xxs:mt-2 xxs:mx-auto || sm:w-full sm:items-center sm:ml-0 sm:mt-2 || md:w-1/2 md:items-center">
+                        <div class="w-full bg-primary h-4"></div>
+                        <div class="cneContainer p-10 bg-secondary ">
+                            <div class="title pb-2">
+                                <p class="uppercase text-lg font-semibold || xxs:text-center">network engineer</p>
                             </div>
-                        </div>
-                        <div class="viewContainer flex justify-end">
-                            <a href="careerPages/networkEng.html" class="text-primary font-bold italic uppercase">View
-                                More...</a>
+                            <div class="paragraph  || xxs:hidden">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+                                    Aliquam
+                                    erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+                            </div>
+                            <div class="locationContainer pt-2">
+                                <div class="container flex items-center">
+                                    <i class="fas fa-map-marker-alt fa-2x" style="color:#7276e8;"></i>
+                                    <p class="capitalize text-primary px-1 || xxs:text-xs">Metro manila, Philippines</p>
+                                </div>
+                            </div>
+                            <div class="viewContainer flex justify-end || xxs:justify-center">
+                                <a href="careerPages/networkEng.html"
+                                    class="text-primary font-bold italic uppercase">View
+                                    More...</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="govCards" class="flex hidden">
-                <div class="CadetNetworkEngineerContainer w-1/3">
+            <div id="govCards"
+                class="flex hidden || xxs:flex-col xxs:px-8 || sm:flex-col sm:px-8 || md:flex-col md:px-8">
+                <div
+                    class="CadetNetworkEngineerContainer w-1/3 || xxs:w-full xxs:mx-auto || sm:w-full sm:mx-auto || md:w-1/2 md:mx-auto">
                     <div class="w-full bg-primary h-4"></div>
                     <div class="cneContainer p-10 bg-secondary">
                         <div class="title pb-2">
-                            <p class="uppercase text-lg font-semibold">financial assistant</p>
+                            <p
+                                class="uppercase text-lg font-semibold || xxs:text-center || sm:text-center || md:text-center">
+                                financial
+                                assistant</p>
                         </div>
-                        <div class="paragraph">
+                        <div class="paragraph || xxs:hidden">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
                                 Aliquam
                                 erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
@@ -155,10 +265,12 @@
                         <div class="locationContainer pt-2">
                             <div class="container flex items-center">
                                 <i class="fas fa-map-marker-alt fa-2x" style="color:#7276e8;"></i>
-                                <p class="capitalize text-primary px-1">Metro manila, Philippines</p>
+                                <p class="capitalize text-primary px-1 || xxs:text-xs || sm:text-xs || md:text-sm">Metro
+                                    manila,
+                                    Philippines</p>
                             </div>
                         </div>
-                        <div class="viewContainer flex justify-end">
+                        <div class="viewContainer flex justify-end || xxs:justify-center">
                             <a href="careerPages/financial.html" class="text-primary font-bold italic uppercase">View
                                 More...</a>
                         </div>
@@ -172,24 +284,34 @@
 
 
     <!-- FooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooter -->
-    <footer class="footer w-full shadow-t-lg">
-        <div class="footerContainer bg-secondary h-44">
-            <div class="wrapper px-56 flex">
-                <div class="w-1/2 h-44 flex text-center justify-center items-center">
-                    <p class="text-lg italic font-semibold font-poppins capitalize">technology radical and customer
+    <footer class="footer w-full shadow-t-lg ">
+        <div class="footerContainer h-44">
+            <div class="wrapper px-56 flex || xxs:flex-col xxs:mx-auto xxs:p-0 xxs:w-full || sm:flex-col sm:mx-auto sm:p-0 sm:w-full
+           || md:flex-col md:mx-auto md:p-0 md:w-full || lg:flex lg:px-16 || xl:flex || 2xl:flex">
+                <div class="w-1/2 h-44 flex text-center justify-center items-center || xxs:w-full xxs:h-20 || sm:w-full sm:h-10
+             || md:w-full md:h-16 || xl:w-full">
+                    <p class="text-lg italic font-semibold font-poppins capitalize || xxs:text-sm || sm:text-sm  
+                  || md:text-md || lg:text-md || xl:text-base">
+                        technology radical and customer
                         excellence
                         services</p>
                 </div>
-                <div class="2ndWrapper w-1/2 flex">
-                    <div class="w-1/2 text-right text-base h-44 py-10">
-                        <p>1912 Cityland 10 Tower H.V. Dela Costa St.</p>
-                        <p>Salcedo Village, Makati City, Philippines</p><br>
-                        <p>(+632) 219-29-88</p>
-                    </div>
-                    <div class="w-1/2 flex">
-                        <div class="block flex-col w-1 h-24 bg-black my-10 mx-2"></div>
-                        <div class="my-14">
-                            <img class="w-60" src="assets/images/icon/traceserv.png" alt="">
+                <div class="|| md:w-full">
+                    <div class="2ndWrapper w-1/2 flex || xxs:mx-auto xxs:p-0 xxs:w-full xxs:flex-col-reverse xxs:justify-center xxs:items-center || sm:mx-auto sm:w-full
+                || md:mx-auto md:p-0 md:w-full || lg:w-full || xl:w-full || 2xl:w-full">
+                        <div
+                            class="w-1/2 text-right text-base h-44 py-10 || xxs:text-md xxs:py-0 xxs:text-center xxs:w-full || sm:text-sm || md:text-base || lg:py-8 lg:text-sm || xl:text-sm xl:py-10 xl:w-full">
+                            <p>1912 Cityland 10 Tower H.V. Dela Costa St.</p>
+                            <p>Salcedo Village, Makati City, Philippines</p><br>
+                            <p>(+632) 219-29-88</p>
+                        </div>
+                        <div class="w-1/2 flex || xxs:h-20 || xl:w-full">
+                            <div
+                                class="block flex-col w-1 h-24 bg-black my-10 mx-2 || xxs:my-10 xxs:hidden || sm:my-10 ">
+                            </div>
+                            <div class="my-14 || xxs:py-3 xxs:my-5 || md:py-auto || xl:w-full">
+                                <img class="w-60" src="assets/images/icon/traceserv.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,7 +323,9 @@
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="assets/js/index.js"></script>
     <script src="assets/js/init.js"></script>
+
 </body>
 
 </html>

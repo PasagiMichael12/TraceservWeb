@@ -27,6 +27,15 @@ $(document).ready(() => {
    $('#menu-button').on('click', () => {
       $('#submenu').removeClass('hidden')
    })
+
+   $('#menu-button2').on('click', () => {
+      let isHidden = $('#submenu2').is(':hidden')
+      if (isHidden) {
+         $('#submenu2').removeClass('xxs:hidden sm:hidden')
+      } else {
+         $('#submenu2').addClass('xxs:hidden sm:hidden')
+      }
+   })
    /* Dropdown */
    /* About Us Page --> see more*/
    $('#seeMore').on('click', function () {

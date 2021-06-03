@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/js/MixGallery.js-master/pub/MixGallery.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+
 </head>
 
 <body>
@@ -40,7 +41,7 @@
 
       <div
         class="w-1/2 links flex font-bold text-white z-50 items-center justify-around || xxs:text-black
-            xxs:hidden xxs:z-10 || sm:hidden || md:hidden || lg:space-x-10 lg:text-base || animate__animated animate__fadeInDown">
+            xxs:hidden xxs:z-10 || sm:hidden || md:hidden || lg:space-x-10 lg:text-base || animate__animated animate__fadeInDown ">
         <a class="" href="index.html">Home</a>
         <!--Dropdown About us-->
         <div class="relative inline-block text-left">
@@ -79,56 +80,63 @@
       <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
     </div>
     </div>
-    <!--Navlik xxs + sm + md -->
-    <div id="dropdown" class="navlink w-full text-black text-center flex-col py-2 hidden z-49 relative mx-auto">
-      <div class="w-1/2 links flex-col">
+    <!--start Navlink xxs + sm + md -->
+    <div id="dropdown" class="navlink w-full text-black text-center flex-col py-2 hidden z-49 relative mx-auto
+       xxs:mx-auto sm:mx-auto xxs:hidden
+        md:hidden lg:hidden xl:hidden 2xl:hidden">
+      <div class="w-full links flex-col xxs:mx-auto sm:mx-auto">
         <div>
-          <a class="hover:text-primary" href="#">Home</a>
+          <a class="hover:text-primary" href="index.html">Home</a>
         </div>
-        <div>
-          <div class="relative inline-block text-left absolute">
+        <div class="">
+          <div class="xxs:mx-auto ">
+            <!-- relative inline-block text-center absolute -->
             <div class="">
-              <a href="#" class="hover:text-primary menu-item" id="menu-button" aria-expanded="true"
+              <a href="#" class="hover:text-primary menu-item" id="menu-button2" aria-expanded="true"
                 aria-haspopup="true">
                 About us
               </a>
             </div>
-            <div id="aboutusmenu"
-              class="origin-top-right relative mt-2 w-56 z-50 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none menu"
-              id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="py-1" role="none">
-                <a href="#briefHistory" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+            <div id="submenu2" class="origin-top-right relative mt-2 w-full z-50 rounded-md bg-white shadow-inner 
+            ring-1 ring-black ring-opacity-5 focus:outline-none menu-item mx-auto || xxs:mx-auto xxs:w-full
+              xxs:hidden sm:mx-auto sm:w-full
+              sm:hidden md:hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button2"
+              tabindex="-1">
+              <div class="xxs:mx-auto" role="none">
+                <a href="index.html#briefHistory"
+                  class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm" role="menuitem"
                   tabindex="-1" id="menu-item-0">Brief History</a>
-                <a href="#coreValues" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
-                  tabindex="-1" id="menu-item-1">Core Values</a>
-                <a href="#galleryContainer" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
+                <a href="#coreValues" class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                  role="menuitem" tabindex="-1" id="menu-item-1">Core Values</a>
+                <a href="#galleryContainer"
+                  class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm" role="menuitem"
                   tabindex="-1" id="menu-item-0">Gallery</a>
-                <a href="#foundation" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
-                  tabindex="-1" id="menu-item-2">Foundation</a>
-                <a href="#vision" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
-                  tabindex="-1" id="menu-item-3">Vision</a>
-                <a href="#mission" class="smooth-scroll text-primary block px-4 py-2 text-sm" role="menuitem"
-                  tabindex="-1" id="menu-item-4">Mission</a>
+                <a href="#foundation" class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                  role="menuitem" tabindex="-1" id="menu-item-2">Foundation</a>
+                <a href="#vision" class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                  role="menuitem" tabindex="-1" id="menu-item-3">Vision</a>
+                <a href="#mission" class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                  role="menuitem" tabindex="-1" id="menu-item-4">Mission</a>
               </div>
             </div>
           </div>
         </div>
         <div>
-          <a class="hover:text-primary" href="#">Services</a>
+          <a class="hover:text-primary" href="#services">Services</a>
         </div>
         <div>
-          <a class="hover:text-primary" href="#">Community</a>
+          <a class="hover:text-primary" href="community.html">Community</a>
         </div>
         <div>
-          <a class="hover:text-primary" href="#">Careers</a>
+          <a class="hover:text-primary" href="careers.html">Careers</a>
         </div>
       </div>
     </div>
-    <!--Navlik xxs + sm + md -->
+    <!--end Navlink xxs + sm + md -->
   </nav>
 
   <!--hero-->
-  <section class="w-full py-10 || lg:py-6 ">
+  <section class="w-full py-10 || xxs:bg-purple-100 || lg:py-6 ">
     <div class="flex px-56 || xxs:px-1 xxs:flex-col xxs:mx-auto || sm:px-4 sm:flex-col sm:mx-auto ||
     md:px-4 md:flex md:mx-auto || lg:flex lg:px-16">
       <div
@@ -144,7 +152,8 @@
         </div>
         <div
           class="w-8/12 || xxs:w-full xxs:mx-auto xxs:px-2 || sm:mx-auto sm:px-4 sm:w-full || md:w-full md:mx-auto || lg:px-0 lg:w-9/12">
-          <p class="text-base italic text-justify || md:py-6 || lg:text-justify">
+          <p
+            class="text-base italic text-justify || xxs:text-gray-500 xxs:my-4 xxs:text-sm xxs:not-italic || md:py-6 || lg:text-justify">
             Lorem ipsum dolor
             sit amet,
             consectetur
@@ -171,19 +180,19 @@
   <!--hero-->
 
   <!-- About Us -->
-  <section class="w-full mx-auto py-36 px-56 || xxs:px-1 xxs:py-1 || sm:p-1 || md:py-8 md:mx-auto md:px-0
+  <section class="w-full mx-auto py-36 px-56 || xxs:px-1 xxs:py-1 || sm:p-1 || md:py-8 md:mx-auto md:px-0 
     || lg:px-16">
     <div class="flex || xxs:flex-col-reverse xxs:p-2 xxs:space-x-0 || sm:flex-col-reverse sm:p-3 sm:space-x-0 || md:flex-col-reverse md:mx-auto 
         || lg:space-x-8 || xl:space-x-8 || 2xl:space-x-12">
       <!-- column 1-->
-      <div class="w-1/2 || xxs:w-full || sm:w-full || md:w-full">
+      <div class="w-1/2  || xxs:w-full || sm:w-full || md:w-full">
         <div
           class="flex bg-primary w-40 justify-center font-bold mb-4 tracking-wide shadow-lg p-2 || xxs:w-full || sm:w-full || md:mx-auto">
           <h3 class="text-white text-xl items-center uppercase tracking-widest">About us</h3>
         </div>
         <div class="mx-auto || md:text-center">
           <h1
-            class="font-bold text-primary capitalize italic text-3xl mb-8 || xxs:text-xl xxs:text-center || sm:text-3xl sm:text-center || md:text-3xl || ">
+            class="font-bold text-primary capitalize italic text-4xl mb-8 || xxs:text-xl xxs:text-center || sm:text-3xl sm:text-center || md:text-3xl || ">
             Our Brief
             History and Core
             Values
@@ -194,7 +203,7 @@
         <div class="items || xxs:px-3 || sm:px-3 || md:px-10">
           <div class="flex items-center space-x-2 ">
             <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
-            <h6 class="text-xl text-primary font-bold tracking-wide capitalize" id="briefHistory">Brief history</h6>
+            <h6 class="text-2xl text-primary font-bold tracking-wide capitalize" id="briefHistory">Brief history</h6>
           </div>
           <div>
             <p
@@ -238,7 +247,7 @@
           <div class="wrapper flex||">
             <div class="flex space-x-2">
               <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
-              <h6 class="text-xl text-primary font-bold tracking-wide capitalize" id="coreValues">Core Values</h6>
+              <h6 class="text-2xl text-primary font-bold tracking-wide capitalize" id="coreValues">Core Values</h6>
             </div>
           </div>
 
@@ -319,14 +328,14 @@
         <div id="fvmContainer"
           class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 xxs:mx-auto || sm:flex-col sm:space-y-4 sm:mx-auto || md:flex-col md:space-y-4 ||  lg:space-x-16 || xl:space-x-10">
           <!--Foundation card-->
-          <div id="foundation" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center 
+          <div id="foundation" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl border-2 border-gray-100 w-80 h-96 flex-col items-center 
             justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out || xxs:w-4/5 || || lg:w-1/2">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
               <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
               </div>
             </div>
             <div class="title text-center text-xl tracking-widest leading-relaxed uppercase">
-              <h4>Foundation</h4>
+              <h4 class="my-2 font-semibold || xxs:my-0 || sm:my-0 || md:my-0 || lg:my-0 || xl:my-0">Foundation</h4>
             </div>
             <div class="paragraph text-sm text-center mx-3">
               <p>Is a profitable and Evolving Community of Problem Solvers and Technolgy Professionals Built in
@@ -335,14 +344,14 @@
             </div>
           </div>
           <!--Vision Card-->
-          <div id="vision" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 
+          <div id="vision" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl border-2 border-gray-100 w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 
             transition duration-700 ease-in-out || xxs:w-4/5 || lg:w-1/2">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
               <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
               </div>
             </div>
             <div class="title text-center text-xl tracking-widest leading-relaxed uppercase">
-              <h4>Vision</h4>
+              <h4 class="my-2 font-semibold || xxs:my-0 || sm:my-0 || md:my-0 || lg:my-0 || xl:my-0">Vision</h4>
             </div>
             <div class="paragraph text-sm text-center mx-3">
               <p>To be a Significant Contributor to the Information and Communication Technology Industry and be
@@ -350,14 +359,14 @@
             </div>
           </div>
           <!--Mission Card-->
-          <div id="mission" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out
+          <div id="mission" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl border-2 border-gray-100 w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out
             || xxs:w-4/5 || lg:w-1/2">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
               <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
               </div>
             </div>
             <div class="title text-center text-xl tracking-widest leading-relaxed uppercase">
-              <h4>Mission</h4>
+              <h4 class="my-2 font-semibold || xxs:my-0 || sm:my-0 || md:my-0 || lg:my-0 || xl:my-0">Mission</h4>
             </div>
             <div class="paragraph text-sm text-center mx-3">
               <p>To Contribute Radically on our Customers Success by Providing Technical Services with embedded
@@ -376,9 +385,9 @@
 
   <!-- ServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServices -->
   <section>
-    <div class="w-full pt-14 mx-auto bg-secondary shadow-lg">
+    <div class="w-full pt-14 mx-auto bg-secondary">
       <div class="flex bg-tertiary justify-center items-center">
-        <p class="uppercase font-bold text-4xl tracking-wider text-white py-4 shadow-lg || xxs:text-2xl || sm:text-3xl 
+        <p class="uppercase font-bold text-4xl tracking-widest text-white py-5 shadow-lg || xxs:text-2xl || sm:text-3xl 
          || md:text-4xl" id="services">
           services</p>
       </div>
@@ -389,7 +398,7 @@
           <div class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 || sm:flex-col sm:space-y-4 
            || md:flex-col md:space-y-4 || lg:space-x-6">
             <div id="cardOne"
-              class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
+              class="h-96 w-80 bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
               <p>IT Service and Quality Management Consulting</p>
               <p class="hidden text-center text-sm font-normal">From Capability Assessment to Root Cause
                 Analysis
@@ -436,7 +445,7 @@
           <div class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 || sm:flex-col sm:space-y-4 
            || md:flex-col md:space-y-4 || lg:space-x-6">
             <div id="cardFour"
-              class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
+              class="h-96 w-80  bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
               <p>Personal Computer and Server Administration</p>
               <p class="hidden text-center text-sm font-normal">Day to day Desktop Support and Server Administration
                 typically for
@@ -446,7 +455,7 @@
               </p>
             </div>
             <div id="cardFive"
-              class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
+              class="h-96 w-80 bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
               <p>Service, Software and CPE Quality Assurance Testing</p>
               <p class="hidden text-center text-sm font-normal">An external Quality Assurance Service for Businesses
                 that are looking
@@ -456,9 +465,10 @@
                 product from their supplier or vendor</p>
             </div>
             <div id="cardSix"
-              class="h-96 w-80 boxes bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
+              class="h-96 w-80 bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
               <p>GET IN TOUCH</p>
-              <p class="hidden text-center text-sm font-normal">1912 Cityland 10 Tower 1 H.V. Dela Costa St. Salcedo
+              <p class="hidden text-center text-sm font-normal ">1912 Cityland 10 Tower 1 H.V. Dela Costa
+                St. Salcedo
                 Village, Makati
                 City, Philippines
                 (+632) 219-29-88
@@ -508,15 +518,16 @@
             career with us!
           </h3>
         </div>
-        <div class="paragraph  items-center justify-center text-justify tracking-wide leading-relax w-4/6 || xxs:text-center 
-          || lg:text-center lg:mx-auto lg:w-full || xl:text-center xl:mx-auto xl:w-full ">
+        <div class="paragraph items-center justify-center text-justify tracking-wider leading-relax w-4/6 || xxs:text-center 
+          || lg:text-center lg:mx-auto lg:w-full || xl:text-center xl:mx-auto xl:w-full xl:tracking-widest xl:text-lg">
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "</p>
         </div>
-        <div class="button flex items-center justify-center">
+        <div class="button flex items-center justify-start">
           <button
-            class="bg-primary hover:bg-blue-600 py-2 flex px-5 text-white w-32 justify-center items-center rounded my-10">Learn
-            More</button>
+            class="bg-primary hover:bg-blue-600 py-2 flex px-5 text-white w-32 justify-center items-center rounded my-10"><a
+              href="careers.html"> Learn
+              More</a></button>
         </div>
       </div>
     </div>
@@ -528,26 +539,26 @@
     <div class="footerContainer bg-purple-100 h-44">
       <div class="wrapper px-56 flex || xxs:flex-col xxs:mx-auto xxs:p-0 xxs:w-full || sm:flex-col sm:mx-auto sm:p-0 sm:w-full
        || md:flex-col md:mx-auto md:p-0 md:w-full || lg:flex lg:px-16 || xl:flex || 2xl:flex">
-        <div class="w-1/2 h-44 flex text-center justify-center items-center || xxs:w-full xxs:h-14 || sm:w-full sm:h-10
-         || md:w-full md:h-16 || ">
-          <p
-            class="text-lg italic font-semibold font-poppins capitalize || xxs:text-sm || sm:text-sm || md:text-md || lg:text-md || xl:text-base">
+        <div class="w-1/2 h-44 flex text-center justify-center items-center || xxs:w-full xxs:h-20 || sm:w-full sm:h-10
+         || md:w-full md:h-16 || xl:w-full">
+          <p class="text-lg italic font-semibold font-poppins capitalize || xxs:text-sm || sm:text-sm 
+              || md:text-md || lg:text-md || xl:text-base">
             technology radical and customer
             excellence
             services</p>
         </div>
         <div class="sm:bg-secondary || md:w-full md:bg-secondary">
-          <div class="2ndWrapper w-1/2 flex || xxs:mx-auto xxs:p-0 xxs:w-full xxs:bg-secondary || sm:mx-auto sm:w-full sm:bg-secondary
+          <div class="2ndWrapper w-1/2 flex || xxs:mx-auto xxs:p-0 xxs:w-full xxs:bg-secondary xxs:flex-col-reverse xxs:justify-center xxs:items-center || sm:mx-auto sm:w-full sm:bg-secondary
             || md:mx-auto md:p-0 md:w-full || lg:w-full || xl:w-full || 2xl:w-full">
             <div
-              class="w-1/2 text-right text-base h-44 py-10 || xxs:text-xs || sm:text-sm || md:text-base || lg:py-8 lg:text-sm || xl:text-sm xl:py-10 xl:w-full">
+              class="w-1/2 text-right text-base h-44 py-10 || xxs:text-md xxs:py-0 xxs:text-center xxs:w-full || sm:text-sm || md:text-base || lg:py-8 lg:text-sm || xl:text-sm xl:py-10 xl:w-full">
               <p>1912 Cityland 10 Tower H.V. Dela Costa St.</p>
               <p>Salcedo Village, Makati City, Philippines</p><br>
               <p>(+632) 219-29-88</p>
             </div>
             <div class="w-1/2 flex || xxs:h-20 || xl:w-full">
-              <div class="block flex-col w-1 h-24 bg-black my-10 mx-2 || xxs:my-10 || sm:my-10 "></div>
-              <div class="my-14 || xxs:py-3 || md:py-auto || xl:w-full">
+              <div class="block flex-col w-1 h-24 bg-black my-10 mx-2 || xxs:my-10 xxs:hidden || sm:my-10 "></div>
+              <div class="my-14 || xxs:py-3 xxs:my-5 || md:py-auto || xl:w-full">
                 <img class="w-60" src="assets/images/icon/traceserv.png" alt="">
               </div>
             </div>
