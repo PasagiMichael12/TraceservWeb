@@ -1,55 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
+    <!-- ... -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="tailwind.css" />
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/js/MixGallery.js-master/pub/MixGallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
 </head>
 
 <body>
-    <!-- nav(logo & triangle) -->
-    <nav class="w-full">
-        <div class="flex px-56 py-16 ||">
-            <div class="w-1/2 ||">
-                <img class="w-5/12" src="assets/images/icon/traceserv.png" alt="Traceserv" />
-            </div>
-            <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12">
-                <img src="assets/images/svg/heroSvg.svg" alt="svgHero" />
-            </div>
-        </div>
-    </nav>
-    <!-- nav(logo & triangle) -->
-
-    <!-- svg & text -->
-    <section class="w-full">
-        <div class="flex px-56 py-16">
-            <!-- text -->
-            <div class="flex flex-col w-1/2 py-32 space-y-3">
-                <h1 class="text-gray-800 font-medium text-5xl font-roboto">Please bear with us</h1>
-                <p class="text-gray-500 font-normal text-3xl font-roboto">
-                    This page is under construction
-                </p>
-                <p class="text-gray-500 font-normal text-3xl font-roboto">
-                    Go back to
-                    <span><a href="index.html" class="text-primary">Home</a></span>
-                </p>
-            </div>
-            <!-- text -->
-            <!-- svg -->
-            <div class="flex z-10 w-8/12 justify-end">
-                <div class="w-10/12">
-                    <img src="assets/images/navbar/banner.png" alt="" class="object-fill z-50" />
+    <!-- Navbar + hero -->
+    <!-- || right side for responsive-->
+    <nav class="w-full flex flex-wrap items-center justify-between || xxs:px-3 xxs:sticky || 
+      md:px-3 md:sticky || lg:px-0 lg:sticky || ">
+        <div
+            class="w-full firsthalf relative flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
+            <div class="w-1/2 || xxs:w-full || sm:w-full || lg:w-full">
+                <div class="traceservIconContainer w-full items-center || xxs:w-full || sm:w-full lg:w-full">
+                    <img class="animate__animated animate__fadeInLeft" src="assets/images/icon/traceserv.png"
+                        alt="TraceservIcon" id="logo">
                 </div>
             </div>
+        </div>
+
+        <div
+            class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:hidden">
+            <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
+        </div>
+        </div>
+        <!--start Navlink xxs + sm + md -->
+        <div id="dropdown" class="navlink w-full text-black text-center flex-col py-2 hidden z-50 relative mx-auto
+      xxs:mx-auto sm:mx-auto xxs:hidden
+       md:hidden lg:hidden xl:hidden 2xl:hidden">
+            <div class="w-full links flex-col xxs:mx-auto sm:mx-auto">
+                <div>
+                    <a class="hover:text-primary" href="index.html">Home</a>
+                </div>
+                <div class="">
+                    <div class="xxs:mx-auto ">
+                        <!-- relative inline-block text-center absolute -->
+                        <div class="">
+                            <a href="#" class="hover:text-primary menu-item" id="menu-button2" aria-expanded="true"
+                                aria-haspopup="true">
+                                About us
+                            </a>
+                        </div>
+                        <div id="submenu2" class="origin-top-right relative mt-2 w-full z-50 rounded-md bg-white shadow-inner 
+           ring-1 ring-black ring-opacity-5 focus:outline-none menu-item mx-auto || xxs:mx-auto xxs:w-full
+             xxs:hidden sm:mx-auto sm:hidden md:hidden" role="menu" aria-orientation="vertical"
+                            aria-labelledby="menu-button2" tabindex="-1">
+                            <div class="xxs:mx-auto" role="none">
+                                <a href="../public/index.html#briefHistory"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-0">Brief History</a>
+                                <a href="../public/index.html#coreValues"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-1">Core Values</a>
+                                <a href="../public/index.html#galleryContainer"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-0">Gallery</a>
+                                <a href="../public/index.html#foundation"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-2">Foundation</a>
+                                <a href="../public/index.html#vision"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-3">Vision</a>
+                                <a href="../public/index.html#mission"
+                                    class="smooth-scroll hover:text-primary text-gray-500 block px-4 py-1 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-4">Mission</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a class="hover:text-primary" href="../public/index.html#services">Services</a>
+                </div>
+                <div>
+                    <a class="hover:text-primary" href="community.html">Community</a>
+                </div>
+                <div>
+                    <a class="hover:text-primary" href="careers.html">Careers</a>
+                </div>
+            </div>
+        </div>
+        <!--end Navlink xxs + sm + md -->
+    </nav>
+
+    <section class="px-56 xxs:px-0 sm:px-0 md:px-0 ">
+        <!-- xxs:px-4 md:px-4 lg:px-0 -->
+        <div class="flex mx-auto xxs:flex-col-reverse xxs:mx-auto sm:flex-col-reverse  sm:mx-auto
+          md:flex-col-reverse md:items-center md:mx-auto lg:items-center lg:px-16 xl:items-center 2xl:items-center ">
+            <!-- text -->
+            <div class="xxs:mx-auto sm:mx-auto md:mx-auto ">
+                <div class="flex-col mx-auto w-1/2 py-32 space-y-3 xxs:py-6
+                 xxs:w-full xxs:px-4 xxs:space-y-1 xxs:justify-center xxs:
+                sm:py-6 sm:w-full sm:px-4 sm:space-y-1 sm:justify-center
+                md:py-6 md:w-full md:px-4 md:space-y-1 md:items-center md:mx-auto 
+                lg:py-30 lg:w-3/4  lg:space-y-3
+                xl:py-30 xl:w-3/4  xl:space-y-3
+                2xl:py-30  2xl:w-3/4  2xl:space-y-3 ">
+                    <h1 class="text-gray-800 font-medium text-5xl font-roboto xxs:text-3xl xxs:text-3xl md:text-4xl ">
+                        Please
+                        bear with us</h1>
+                    <p class="text-gray-500 font-normal text-3xl font-roboto xxs:text-xl xxs:text-xl md:text-2xl ">
+                        This page is under construction
+                    </p>
+                    <p class="text-gray-500 font-normal text-3xl font-roboto xxs:text-xl xxs:text-xl md:text-2xl ">
+                        Go back to
+                        <span><a href="index.html" class="text-primary">Home</a></span>
+                    </p>
+                </div>
+            </div>
+
             <!-- svg -->
+            <div class="flex z-10 w-8/12 justify-end xxs:justify-center xxs:w-full xxs:py-8 xxs:bg-primary
+             sm:justify-center sm:w-full sm:py-8 sm:bg-primary md:hidden lg:hidden xl:hidden 2xl:hidden">
+                <div class="w-10/12 xxs:w-8/12 sm:w-8/12 ">
+                    <img src="assets/images/icon/warning.png" class="object-fill z-50" alt="">
+                </div>
+            </div>
+            <!-- md, lg, xl,2xl -->
+            <div class="flex z-10 w-8/12 justify-end xxs:hidden sm:hidden
+                 md:py-10 md:justify-center md:w-full md:py-4 md:bg-primary">
+                <div class="w-10/12 xxs:w-8/12 md:w-full">
+                    <img src="assets/images/navbar/banner.png" alt=""
+                        class="object-fill z-50 md:w-1/2 md:mx-auto lg:object-fill " />
+                </div>
+            </div>
         </div>
     </section>
-    <!-- svg & text -->
 
+
+    <script src="assets/js/MixGallery.js-master/pub/js/MixGallery.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="assets/js/index.js"></script>
     <script src="assets/js/init.js"></script>
 </body>
 

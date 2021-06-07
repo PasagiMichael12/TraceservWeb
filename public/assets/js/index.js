@@ -31,9 +31,9 @@ $(document).ready(() => {
    $('#menu-button2').on('click', () => {
       let isHidden = $('#submenu2').is(':hidden')
       if (isHidden) {
-         $('#submenu2').removeClass('xxs:hidden sm:hidden')
+         $('#submenu2').removeClass('xxs:hidden sm:hidden md:hidden')
       } else {
-         $('#submenu2').addClass('xxs:hidden sm:hidden')
+         $('#submenu2').addClass('xxs:hidden sm:hidden md:hidden')
       }
    })
    /* Dropdown */
