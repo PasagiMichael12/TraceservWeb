@@ -13,13 +13,13 @@
 
 </head>
 
-<body>
+<body class="xxs:bg-purple-100 sm:bg-purple-100 md:bg-purple-100 ">
     <!-- Navbar + hero -->
     <!-- || right side for responsive-->
-    <nav class="w-full flex flex-wrap items-center justify-between || xxs:px-3 xxs:sticky || 
-      md:px-3 md:sticky || lg:px-0 lg:sticky || ">
+    <nav class="w-full flex flex-wrap items-center justify-between bg-white || xxs:px-3 xxs:sticky || 
+      md:px-3 md:sticky || lg:px-0 lg:sticky || xl:px-0 xl:sticky || 2xl:px-0 2xl:sticky">
         <div
-            class="w-full firsthalf relative flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
+            class="w-full firsthalf relative flex px-52 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
             <div class="w-1/2 || xxs:w-full || sm:w-full || lg:w-full">
                 <div class="traceservIconContainer w-full items-center || xxs:w-full || sm:w-full lg:w-full">
                     <img class="animate__animated animate__fadeInLeft" src="assets/images/icon/traceserv.png"
@@ -29,7 +29,7 @@
         </div>
 
         <div
-            class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:hidden">
+            class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:hidden ">
             <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
         </div>
         </div>
@@ -91,49 +91,42 @@
         <!--end Navlink xxs + sm + md -->
     </nav>
 
-    <section class="px-56 xxs:px-0 sm:px-0 md:px-0 ">
-        <!-- xxs:px-4 md:px-4 lg:px-0 -->
-        <div class="flex mx-auto xxs:flex-col-reverse xxs:mx-auto sm:flex-col-reverse  sm:mx-auto
-          md:flex-col-reverse md:items-center md:mx-auto lg:items-center lg:px-16 xl:items-center 2xl:items-center ">
-            <!-- text -->
-            <div class="xxs:mx-auto sm:mx-auto md:mx-auto ">
-                <div class="flex-col mx-auto w-1/2 py-32 space-y-3 xxs:py-6
-                 xxs:w-full xxs:px-4 xxs:space-y-1 xxs:justify-center xxs:
-                sm:py-6 sm:w-full sm:px-4 sm:space-y-1 sm:justify-center
-                md:py-6 md:w-full md:px-4 md:space-y-1 md:items-center md:mx-auto 
-                lg:py-30 lg:w-3/4  lg:space-y-3
-                xl:py-30 xl:w-3/4  xl:space-y-3
-                2xl:py-30  2xl:w-3/4  2xl:space-y-3 ">
-                    <h1 class="text-gray-800 font-medium text-5xl font-roboto xxs:text-3xl xxs:text-3xl md:text-4xl ">
+
+    <section class="w-full  || ">
+        <div class="flex px-52 || xxs:px-0 xxs:flex-col-reverse xxs:mx-auto  || sm:px-0 sm:flex-col-reverse sm:mx-auto ||
+          md:px-0 md:flex-col-reverse md:mx-auto  || lg:flex lg:px-16 || ">
+            <div class="flex-col mx-auto w-1/2 py-28 space-y-3 xxs:py-6
+                 xxs:py-6 xxs:w-full xxs:px-4 xxs:space-y-1 xxs:flex xxs:items-center || sm:py-6 sm:w-full sm:px-4 sm:space-y-1 sm:flex sm:items-center || md:py-6 
+                         md:w-full md:px-4 md:space-y-1 md:flex md:items-center || lg:py-30 lg:w-1/2  lg:space-y-3 xl:py-30 xl:w-3/4  
+                         xl:space-y-32xl:py-30  2xl:w-3/4  2xl:space-y-3 2xl:pt-48 ">
+                <div class="xxs:flex-col xxs:items-center sm:flex-col sm:items-center md:flex-col md:items-center">
+                    <h1
+                        class="text-gray-800 font-medium text-5xl font-roboto xxs:text-3xl xxs:text-3xl md:text-4xl 2xl:text-7xl">
                         Please
                         bear with us</h1>
-                    <p class="text-gray-500 font-normal text-3xl font-roboto xxs:text-xl xxs:text-xl md:text-2xl ">
+                    <p
+                        class="text-gray-500 font-normal text-3xl font-roboto xxs:text-xl xxs:text-xl md:text-2xl 2xl:text-5xl">
                         This page is under construction
                     </p>
-                    <p class="text-gray-500 font-normal text-3xl font-roboto xxs:text-xl xxs:text-xl md:text-2xl ">
+                    <p
+                        class="text-gray-500 font-normal text-3xl font-roboto xxs:text-xl xxs:text-xl md:text-2xl 2xl:text-5xl">
                         Go back to
                         <span><a href="index.html" class="text-primary">Home</a></span>
                     </p>
                 </div>
             </div>
 
-            <!-- svg -->
-            <div class="flex z-10 w-8/12 justify-end xxs:justify-center xxs:w-full xxs:py-8 xxs:bg-primary
-             sm:justify-center sm:w-full sm:py-8 sm:bg-primary md:hidden lg:hidden xl:hidden 2xl:hidden">
-                <div class="w-10/12 xxs:w-8/12 sm:w-8/12 ">
-                    <img src="assets/images/icon/warning.png" class="object-fill z-50" alt="">
-                </div>
-            </div>
-            <!-- md, lg, xl,2xl -->
-            <div class="flex z-10 w-8/12 justify-end xxs:hidden sm:hidden
-                 md:py-10 md:justify-center md:w-full md:py-4 md:bg-primary">
-                <div class="w-10/12 xxs:w-8/12 md:w-full">
-                    <img src="assets/images/navbar/banner.png" alt=""
-                        class="object-fill z-50 md:w-1/2 md:mx-auto lg:object-fill " />
+            <div class="w-9/12 z-10 mx-auto || xxs:w-full xxs:mx-auto xxs:bg-primary || sm:w-full sm:mx-auto sm:bg-primary || md:w-full md:mx-auto 
+            md:bg-primary || lg:z-10 lg:mx-auto lg:w-6/12 lg:mr-14 || xl:z-10 xl:mx-auto xl:w-11/12  ">
+                <div class="w-full animate__animated animate__fadeInDown">
+                    <img src="assets/images/svg/banner.svg" alt=""
+                        class="object-fill z-50 xxs:mr-14 sm:mr-28 md:mr-28 2xl:mr-24">
                 </div>
             </div>
         </div>
     </section>
+
+
 
 
     <script src="assets/js/MixGallery.js-master/pub/js/MixGallery.js"></script>

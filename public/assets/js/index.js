@@ -24,19 +24,28 @@ $(document).ready(() => {
       }
    })
 
-   $('#menu-button').on('click', () => {
+   $(document).on('click', '#menu-button', () => {
       $('#submenu').removeClass('hidden')
    })
 
-   $('#menu-button2').on('click', () => {
+   $(document).on('click', '#menu-button2', () => {
       let isHidden = $('#submenu2').is(':hidden')
       if (isHidden) {
          $('#submenu2').removeClass('xxs:hidden sm:hidden md:hidden')
+         $('#submenu2').slideDown()
       } else {
          $('#submenu2').addClass('xxs:hidden sm:hidden md:hidden')
       }
    })
    /* Dropdown */
+   /* Navbar modal for business cycle */
+   $('#modalButton').on('click', (e) => {
+      $('#businessModal').removeClass('hidden')
+      $('#closeButton').on('click', () => {
+         $('#businessModal').addClass('hidden')
+      })
+   })
+
    /* About Us Page --> see more*/
    $('#seeMore').on('click', function () {
       $('.par2').removeClass('hidden')
@@ -76,6 +85,8 @@ $(document).ready(() => {
    })
    $('#cardSix').on('click', () => {
       clickCardChange('#cardSix')
+      $('#front').toggleClass('hidden')
+      $('#getInTouch').toggleClass('hidden')
    })
    function clickCardChange(value) {
       $(`${value}`).toggleClass('bg-tertiary text-white')
@@ -154,3 +165,5 @@ const elements = [
    },
 ]
 const mixgallery = MixGallery(document.querySelector('#gallery'), elements)
+
+mixgallery.render()

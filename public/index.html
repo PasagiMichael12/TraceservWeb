@@ -6,9 +6,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="tailwind.css">
-  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="assets/js/MixGallery.js-master/pub/MixGallery.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="assets/js/MixGallery.js-master/pub/MixGallery.css">
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 
 
 </head>
@@ -16,10 +16,12 @@
 <body>
   <!-- Navbar + hero -->
   <!-- || right side for responsive-->
-  <nav class="w-full flex flex-wrap items-center justify-between  || xxs:px-3 xxs:sticky xxs:shadow-lg || 
+  <nav class="w-full || xxs:px-3 xxs:sticky xxs:shadow-lg || 
   md:px-3 md:sticky || lg:px-0 lg:sticky || ">
+    <!--flex flex wrap removed on nav-->
     <div
-      class="w-full firsthalf relative flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
+      class="w-full firsthalf flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
+      <!--removed relative-->
       <div class="w-1/2 || xxs:w-full || sm:w-full ">
         <div class="traceservIconContainer w-full items-center || xxs:w-full || sm:w-full">
           <img class="animate__animated animate__fadeInLeft" src="assets/images/icon/traceserv.png" alt="TraceservIcon"
@@ -40,9 +42,9 @@
       <!--Burger-->
 
       <div
-        class="w-1/2 links flex font-bold text-white z-50 items-center justify-around || xxs:text-black
+        class="w-1/2 links flex font-bold text-white z-10 items-center justify-around || xxs:text-black
            xxs:hidden xxs:z-10 || sm:hidden || md:hidden || lg:space-x-10 lg:text-base || animate__animated animate__fadeInDown ">
-        <a class="" href="index.html">Home</a>
+        <a class="hover:text-yellow-300" href="index.html">Home</a>
         <!--Dropdown About us-->
         <div class="relative inline-block text-left">
           <div class="">
@@ -55,25 +57,31 @@
             class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden menu"
             id="submenu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
             <div class="py-1" role="none">
-              <a href="../public/index.html#briefHistory" class="smooth-scroll text-primary block px-4 py-2 text-sm"
-                role="menuitem" tabindex="-1" id="menu-item-0">Brief History</a>
-              <a href="../public/index.html#coreValues" class="smooth-scroll text-primary block px-4 py-2 text-sm"
-                role="menuitem" tabindex="-1" id="menu-item-1">Core Values</a>
-              <a href="../public/index.html#galleryContainer" class="smooth-scroll text-primary block px-4 py-2 text-sm"
-                role="menuitem" tabindex="-1" id="menu-item-0">Gallery</a>
-              <a href="../public/index.html#foundation" class="smooth-scroll text-primary block px-4 py-2 text-sm"
-                role="menuitem" tabindex="-1" id="menu-item-2">Foundation</a>
-              <a href="../public/index.html#vision" class="smooth-scroll text-primary block px-4 py-2 text-sm"
-                role="menuitem" tabindex="-1" id="menu-item-3">Vision</a>
-              <a href="../public/index.html#mission" class="smooth-scroll text-primary block px-4 py-2 text-sm"
-                role="menuitem" tabindex="-1" id="menu-item-4">Mission</a>
+              <a href="../public/index.html#briefHistory"
+                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
+                tabindex="-1" id="menu-item-0">Brief History</a>
+              <a href="../public/index.html#coreValues"
+                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
+                tabindex="-1" id="menu-item-1">Core Values</a>
+              <a href="../public/index.html#galleryContainer"
+                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
+                tabindex="-1" id="menu-item-0">Gallery</a>
+              <a href="../public/index.html#foundation"
+                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
+                tabindex="-1" id="menu-item-2">Foundation</a>
+              <a href="../public/index.html#vision"
+                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
+                tabindex="-1" id="menu-item-3">Vision</a>
+              <a href="../public/index.html#mission"
+                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
+                tabindex="-1" id="menu-item-4">Mission</a>
             </div>
           </div>
         </div>
         <!--Dropdown About us-->
-        <a class="smooth-scroll" href="../public/index.html#services">Services</a>
-        <a class="" href="community.html">Community</a>
-        <a class="" href="careers.html">Careers</a>
+        <a class="smooth-scroll hover:text-yellow-300" href="../public/index.html#services">Services</a>
+        <a class="hover:text-yellow-300" href="community.html">Community</a>
+        <a class="hover:text-yellow-300" href="careers.html">Careers</a>
       </div>
     </div>
     <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:hidden">
@@ -154,7 +162,7 @@
             Services </h1>
         </div>
         <div
-          class="w-8/12 || xxs:w-full xxs:mx-auto xxs:px-2 || sm:mx-auto sm:px-4 sm:w-full || md:w-full md:mx-auto || lg:px-0 lg:w-9/12">
+          class="w-8/12  || xxs:w-full xxs:mx-auto xxs:px-2 || sm:mx-auto sm:px-4 sm:w-full || md:w-full md:mx-auto || lg:px-0 lg:w-9/12">
           <p
             class="text-base italic text-justify || xxs:text-gray-500 xxs:my-4 xxs:text-sm xxs:not-italic || md:py-6 || lg:text-justify">
             Lorem ipsum dolor
@@ -165,7 +173,7 @@
             Aliquam at
             porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
         </div>
-        <button class="text-white mt-8 ">
+        <button class="text-white mt-8" type="button" id="modalButton">
           <div
             class="buttonContainer bg-primary hover:bg-blue-600 w-44 p-2 rounded flex items-center justify-center text-md ">
             Business Info Cycle
@@ -182,6 +190,30 @@
   </section>
   <!--hero-->
 
+  <!--Modal-->
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <div id="businessModal" class="fixed z-50 inset-0  hidden" aria-labelledby="modal-title" role="dialog"
+    aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+      <div
+        class="align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+        <div class="w-full flex justify-end mb-2">
+          <button type="button" id="closeButton" class="flex justify-end right-0 w-10 text-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 
+            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 xxs:w-10 sm:text-sm">
+            x
+          </button>
+        </div>
+        <video width="1280" height="720" controls>
+          <source src="assets/video/businessCycle.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+  <!--Modal-->
+
   <!-- About Us -->
   <section class="w-full mx-auto py-36 px-56 || xxs:px-1 xxs:py-1 || sm:p-1 || md:py-8 md:mx-auto md:px-0 
     || lg:px-16">
@@ -190,7 +222,7 @@
       <!-- column 1-->
       <div class="w-1/2  || xxs:w-full || sm:w-full || md:w-full">
         <div
-          class="flex bg-primary w-40 justify-center font-bold mb-4 tracking-wide shadow-lg p-2 || xxs:w-full || sm:w-full || md:mx-auto">
+          class="flex bg-primary w-40 justify-center font-bold mb-4 tracking-wide shadow-lg p-2 animate__animated wow animate__fadeInLeft|| xxs:w-full || sm:w-full || md:mx-auto">
           <h3 class="text-white text-xl items-center uppercase tracking-widest">About us</h3>
         </div>
         <div class="mx-auto || md:text-center">
@@ -284,9 +316,18 @@
       class="container bg-white w-40 mx-auto p-2 my-8 shadow-lg || xxs:w-28 xxs:p-1 || sm:w-30 sm:p-1 || md:w-30 md:p-1">
       <p class="text-primary text-center text-xl font-bold uppercase || xxs:text-md || sm:text-md">Gallery</p>
     </div>
+    <div
+      class="container w-1/2 mx-auto mb-10 || xxs:p-1  xxs:w-full xxs:text-center || sm:w-30 sm:p-1 || md:w-30 md:p-1">
+      <p class="text-white text-center text-lg font-normal capitalize || xxs:text-md|| sm:text-md">"Lorem
+        ipsum dolor
+        sit
+        amet consectetur adipisicing elit. Sit ullam error ex vel omnis. Ea libero non quasi qui quos, eum, et
+        voluptatem praesentium explicabo laboriosam officia recusandae optio sint!"</p>
+    </div>
     <div class="w-full px-56 || xxs:px-3 || sm:px-20 || md:w-full md:px-24">
       <div class="pictureContainer bg-white w-full relative flex items-center justify-center p-2 ||">
         <div id="gallery" class="object-fit">
+
         </div>
       </div>
     </div>
@@ -334,7 +375,8 @@
           <div id="foundation" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl border-2 border-gray-100 w-80 h-96 flex-col items-center 
             justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out || xxs:w-4/5 || || lg:w-1/2">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
-              <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
+              <div class="icon bg-secondary w-28 h-28 rounded-tl-3xl rounded-b-3xl flex justify-center items-center">
+                <img class="w-3/6" src="assets/images/foundation/Foundation_icon.png" alt="">
               </div>
             </div>
             <div class="title text-center text-xl tracking-widest leading-relaxed uppercase">
@@ -350,7 +392,8 @@
           <div id="vision" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl border-2 border-gray-100 w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 
             transition duration-700 ease-in-out || xxs:w-4/5 || lg:w-1/2">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
-              <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
+              <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl flex items-center justify-center">
+                <img class="w-3/6" src="assets/images/foundation/Vision_icon.png" alt="">
               </div>
             </div>
             <div class="title text-center text-xl tracking-widest leading-relaxed uppercase">
@@ -365,7 +408,8 @@
           <div id="mission" class="boxes hover:bg-tertiary hover:text-white bg-white text-black shadow-xl border-2 border-gray-100 w-80 h-96 flex-col items-center justify-center rounded-2xl px-2 z-50 transition duration-700 ease-in-out
             || xxs:w-4/5 || lg:w-1/2">
             <div class="iconWrapper w-18 h-48 flex justify-center items-center">
-              <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl">
+              <div class="icon bg-blue-100 w-28 h-28 rounded-tl-3xl rounded-b-3xl flex items-center justify-center">
+                <img class="w-3/6" src="assets/images/foundation/Mission_iconn.png" alt="">
               </div>
             </div>
             <div class="title text-center text-xl tracking-widest leading-relaxed uppercase">
@@ -390,7 +434,7 @@
   <section>
     <div class="w-full pt-14 mx-auto bg-secondary">
       <div class="flex bg-tertiary justify-center items-center">
-        <p class="uppercase font-bold text-4xl tracking-widest text-white py-5 shadow-lg || xxs:text-2xl || sm:text-3xl 
+        <p class="uppercase font-bold text-4xl tracking-widest text-white py-6 shadow-lg || xxs:text-2xl || sm:text-3xl 
          || md:text-4xl" id="services">
           services</p>
       </div>
@@ -467,15 +511,32 @@
                 product/services before commercial deployment or a third party to test their acquired services or
                 product from their supplier or vendor</p>
             </div>
-            <div id="cardSix"
-              class="h-96 w-80 bg-white py-32 px-12 flex items-center justify-center rounded-3xl || xxs:w-4/5">
-              <p>GET IN TOUCH</p>
-              <p class="hidden text-center text-sm font-normal ">1912 Cityland 10 Tower 1 H.V. Dela Costa
-                St. Salcedo
-                Village, Makati
-                City, Philippines
-                (+632) 219-29-88
-                Like our page on Facebook</p>
+            <div id="cardSix" class="h-96 w-80 bg-white px-12 rounded-3xl py-8 || xxs:w-4/5">
+              <div class="flex-col items-center justify-center py-24" id="front">
+                <div class="flex justify-center pb-5">
+                  <img src="../public/assets/images/services/Getintouch_icon.png" class="w-1/2 " />
+                </div>
+                <div>
+                  <p>GET IN TOUCH</p>
+                </div>
+              </div>
+              <div id="getInTouch" class="hidden text-center text-base font-normal flex-col space-y-8 py-14">
+                <div class="flex text-justify space-x-4">
+                  <class class="fas fa-map-marker-alt fa-2x"></class>
+                  <span>1912 Cityland 10 Tower 1 H.V. Dela Costa
+                    St. Salcedo
+                    Village, Makati
+                    City, Philippines</span>
+                </div>
+                <div class="flex text-justify space-x-4">
+                  <i class="fas fa-phone-alt fa-lg"></i>
+                  <span>(+632) 219-29-88</span>
+                </div>
+                <div class="flex text-justify space-x-4">
+                  <i class="fab fa-facebook-f fa-lg"></i>
+                  <span>Like our page on Facebook</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -507,7 +568,7 @@
       || sm:pr-0 sm:px-5 sm:flex-col sm:w-1/2 sm:pt-3
           md:w-5/12 || lg:w-10/12 xl:w-10/12">
         <div class="w-full || md:pt-12 || lg:pt-8 || xl:pt-10 || 2xl:pt-10">
-          <img class="flex justify-center items-center object-fit w-full" src="assets/images/career/hr.png"
+          <img class="flex justify-center items-center object-fit w-full" src="assets/images/svg/hr1.png"
             alt="CareerImage">
         </div>
       </div>
@@ -574,9 +635,12 @@
 
   <script src="assets/js/MixGallery.js-master/pub/js/MixGallery.js"></script>
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="../node_modules/wowjs/dist/wow.min.js"></script>
-  <script src="assets/js/index.js"></script>
+  <script src="../node_modules/wowjs/dist/wow.js"></script>
+  <script>
+    new WOW().init()
+  </script>
   <script src="assets/js/init.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>
