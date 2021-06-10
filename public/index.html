@@ -16,11 +16,11 @@
 <body>
   <!-- Navbar + hero -->
   <!-- || right side for responsive-->
-  <nav class="w-full || xxs:px-3 xxs:sticky xxs:shadow-lg || 
-  md:px-3 md:sticky || lg:px-0 lg:sticky || ">
+  <nav class=" mx-auto w-full || xxs:px-3 xxs:sticky xxs:shadow-lg || 
+  md:px-3 md:sticky || lg:px-0 lg:sticky || xxl:bg-purple-200 ">
     <!--flex flex wrap removed on nav-->
     <div
-      class="w-full firsthalf flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
+      class="w-full section mx-auto firsthalf flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
       <!--removed relative-->
       <div class="w-1/2 || xxs:w-full || sm:w-full ">
         <div class="traceservIconContainer w-full items-center || xxs:w-full || sm:w-full">
@@ -82,7 +82,7 @@
         <a class="hover:text-yellow-300" href="careers.html">Careers</a>
       </div>
     </div>
-    <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:hidden">
+    <div class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:hidden  || xl:hidden || xxl:hidden">
       <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
     </div>
     </div>
@@ -145,13 +145,13 @@
   </nav>
 
   <!--hero-->
-  <section class="w-full py-10 || xxs:bg-purple-100 || lg:py-6 ">
-    <div class="flex px-56 || xxs:px-1 xxs:flex-col xxs:mx-auto || sm:px-4 sm:flex-col sm:mx-auto ||
+  <section class=" mx-auto w-full py-10 || xxs:bg-purple-100 || lg:py-6 || xxl:bg-primary ">
+    <div class=" section mx-auto flex px-56 || xxs:px-1 xxs:flex-col xxs:mx-auto || sm:px-4 sm:flex-col sm:mx-auto || 
     md:px-4 md:flex md:mx-auto || lg:flex lg:px-16">
       <div class="w-1/2 py-32 || xxs:w-full xxs:py-1 xxs:text-center xxs:mx-auto || sm:w-full sm:py-2 sm:text-center sm:mx-auto
           || md:w-full md:py-4 md:text-center || lg:py-10 lg:w-full || xl:py-14 || ">
         <div class="md:text-center">
-          <h1 class="text-primary font-extrabold text-4xl font-roboto || xxs:text-2xl || md:text-2xl || lg:text-3xl">
+          <h1 class="text-primary font-extrabold text-4xl font-roboto || xxs:text-2xl || md:text-2xl || lg:text-3xl || xxl:text-white">
             Technology Radical
             And <br>
             Customer
@@ -161,7 +161,7 @@
         <div
           class="w-8/12  || xxs:w-full xxs:mx-auto xxs:px-2 || sm:mx-auto sm:px-4 sm:w-full || md:w-full md:mx-auto || lg:px-0 lg:w-9/12">
           <p
-            class="text-base italic text-justify || xxs:text-gray-500 xxs:my-4 xxs:text-sm xxs:not-italic || md:py-6 || lg:text-justify">
+            class="text-base italic text-justify || xxs:text-gray-500 xxs:my-4 xxs:text-sm xxs:not-italic || md:py-6 || lg:text-justify || xxl:text-gray-200">
             Lorem ipsum dolor
             sit amet,
             consectetur
@@ -172,7 +172,7 @@
         </div>
         <button class="text-white mt-8" type="button" id="modalButton">
           <div
-            class="buttonContainer bg-primary hover:bg-blue-600 w-44 p-2 rounded flex items-center justify-center text-md ">
+            class="buttonContainer bg-primary hover:bg-blue-600 w-44 p-2 rounded flex items-center border-0 justify-center text-md  || xxl:bg-white xxl:text-primary xxl:hover:bg-purple-300">
             Business Info Cycle
           </div>
         </button>
@@ -189,10 +189,10 @@
 
   <!--Modal-->
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div id="businessModal" class="fixed z-50 inset-0  hidden wow animate__fadeIn" aria-labelledby="modal-title"
+  <div id="businessModal" class=" fixed z-50 inset-0  hidden wow animate__fadeIn" aria-labelledby="modal-title"
     role="dialog" aria-modal="true">
     <div
-      class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center xxs:items-center sm:block sm:p-0 md:items-center lg:items-center">
+      class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center xxs:items-center sm:block sm:p-0 md:items-center lg:items-center xxl:items-center">
       <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
       <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
       <div
@@ -213,9 +213,9 @@
   <!--Modal-->
 
   <!-- About Us -->
-  <section class="w-full mx-auto py-36 px-56 || xxs:px-1 xxs:py-1 || sm:p-1 || md:py-8 md:mx-auto md:px-0 
-    || lg:px-16">
-    <div class="flex || xxs:flex-col-reverse xxs:p-2 xxs:space-x-0 || sm:flex-col-reverse sm:p-3 sm:space-x-0 || md:flex-col-reverse md:mx-auto 
+  <section class="mx-auto   py-36 px-56 || xxs:px-1 xxs:py-1 || sm:p-1 || md:py-8 md:mx-auto md:px-0 
+    || lg:px-16 " >
+    <div class="flex section mx-auto || xxs:flex-col-reverse xxs:p-2 xxs:space-x-0 || sm:flex-col-reverse sm:p-3 sm:space-x-0 || md:flex-col-reverse md:mx-auto 
         || lg:space-x-8 || xl:space-x-8 || 2xl:space-x-12">
       <!-- column 1-->
       <div class="w-1/2 wow animate__fadeInLeft || xxs:w-full || sm:w-full || md:w-full">
@@ -310,7 +310,7 @@
   <!-- About Us -->
 
   <!-- GalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGallery -->
-  <section id="galleryContainer" class="flex-col w-full mx-auto pt-4 pb-32 bgGradientGallery || md:mt-8 md:pb-20">
+  <section id="galleryContainer" class="flex-col section mx-auto  w-full pt-4 pb-32 bgGradientGallery || md:mt-8 md:pb-20">
     <div
       class="container bg-white w-40 mx-auto p-2 my-8 shadow-lg wow animate__fadeInUp || xxs:w-28 xxs:p-1 || sm:w-30 sm:p-1 || md:w-30 md:p-1">
       <p class="text-primary text-center text-xl font-bold uppercase || xxs:text-md || sm:text-md">
@@ -335,7 +335,7 @@
   <!-- GalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGalleryGallery -->
 
   <!--FoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundation-->
-  <section class="w-full mx-auto">
+  <section class="w-full section mx-auto">
     <div class="foundationContainer relative">
       <!--FVM Container-->
       <!--lights-->
@@ -436,7 +436,7 @@
   <!--FoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundationFoundation-->
 
   <!-- ServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServices -->
-  <section>
+  <section >
     <div class="w-full pt-14 mx-auto bg-secondary">
       <div class="flex bg-tertiary justify-center items-center">
         <p class="uppercase font-bold text-4xl tracking-widest text-white py-6 shadow-lg || xxs:text-2xl || sm:text-3xl 
@@ -445,7 +445,7 @@
       </div>
       <!-- Cards -->
       <div
-        class="py-20 mx-40 wow animate__zoomIn || xxs:mx-auto xxs:py-10 || sm:mx-auto sm:py-10 || md:mx-10 md:py-10 || lg:mx-16 lg:py-10"
+        class=" section mx-auto py-20 mx-40 wow animate__zoomIn || xxs:mx-auto xxs:py-10 || sm:mx-auto sm:py-10 || md:mx-10 md:py-10 || lg:mx-16 lg:py-10"
         data-wow-duration="0.5s" data-wow-delay="0.5s">
         <div class="items-center text-center text-primary font-bold text-2xl">
           <div class="flex justify-around items-center || xxs:flex-col xxs:space-y-4 || sm:flex-col sm:space-y-4 
@@ -553,7 +553,7 @@
   <!-- ServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServicesServices -->
 
   <!-- Career -->
-  <section class="py-16 w-full mx-auto">
+  <section class="py-16 w-full section mx-auto">
     <div class="careerWord mx-auto px-56 || xxs:px-2 || sm:px-2">
       <div class="container bg-primary w-40 mx-auto p-2 my-4 shadow-lg wow animate__zoomIn">
         <p class="text-white text-center text-xl font-bold uppercase ">careers</p>

@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.section {
+   max-width: 2000px;
+ }
 html {
    scroll-behavior: smooth;
 }
