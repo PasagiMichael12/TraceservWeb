@@ -13,23 +13,21 @@
 
 </head>
 
-<body>
+<body class="relative">
   <!-- Navbar + hero -->
   <!-- || right side for responsive-->
-  <nav class=" mx-auto w-full || xxs:px-3 xxs:sticky xxs:shadow-lg || 
-  md:px-3 md:sticky || lg:px-0 lg:sticky || xxl:bg-purple-300 ">
-    <!--flex flex wrap removed on nav-->
+  <nav class=" mx-auto  w-full flex flex-wrap items-center justify-between  || xxs:px-3 xxs:sticky xxs:shadow-lg || 
+      md:px-3 md:sticky || lg:px-0 lg:sticky || xxl:bg-purple-200">
     <div
-      class="w-full section mx-auto firsthalf flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
-      <!--removed relative-->
-      <div class="w-1/2 || xxs:w-full || sm:w-full ">
+      class="section mx-auto w-full firsthalf relative flex px-56 py-4 || xxs:px-0 xxs:py-2 || sm:px-4 sm:py-2 || md:px-4 md:py-4 || lg:px-16">
+      <div class="w-1/2 || xxs:w-full || sm:w-full ||  ">
         <div class="traceservIconContainer w-full items-center || xxs:w-full || sm:w-full">
           <img class="" src="assets/images/icon/traceserv.png" alt="TraceservIcon" id="logo">
         </div>
       </div>
       <!--Burger-->
-      <div class="w-1/2 flex items-center justify-end || xxs:flex xxs:justify-end || sm:flex sm:justify-end  
-         || md:flex md:justify-end || lg:hidden || xl:hidden || 2xl:hidden || ">
+      <div class="w-1/2 flex items-center justify-end || xxs:block xxs:flex xxs:justify-end || sm:block sm:flex sm:justify-end  
+         || md:block md:flex md:justify-end || lg:hidden || xl:hidden || 2xl:hidden || ">
         <div id="logo" class="wrapper">
           <div class="circle icon relative w-44 h-14">
             <div class=" line top w-8 h-2 absolute"></div>
@@ -41,8 +39,8 @@
       <!--Burger-->
 
       <div class="w-1/2 links flex font-bold text-white z-50 items-center justify-around || xxs:text-black
-           xxs:hidden xxs:z-10 || sm:hidden || md:hidden || lg:space-x-10 lg:text-base || ">
-        <a class="hover:text-yellow-300" href="index.html">Home</a>
+           xxs:hidden xxs:z-10 || sm:hidden || md:hidden || lg:space-x-10 lg:text-base ||">
+        <a class="" href="index.html">Home</a>
         <!--Dropdown About us-->
         <div class="relative inline-block text-left">
           <div class="">
@@ -55,35 +53,29 @@
             class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden menu"
             id="submenu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
             <div class="py-1" role="none">
-              <a href="../public/index.html#briefHistory"
-                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
-                tabindex="-1" id="menu-item-0">Brief History</a>
-              <a href="../public/index.html#coreValues"
-                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
-                tabindex="-1" id="menu-item-1">Core Values</a>
-              <a href="../public/index.html#galleryContainer"
-                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
-                tabindex="-1" id="menu-item-0">Gallery</a>
-              <a href="../public/index.html#foundation"
-                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
-                tabindex="-1" id="menu-item-2">Foundation</a>
-              <a href="../public/index.html#vision"
-                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
-                tabindex="-1" id="menu-item-3">Vision</a>
-              <a href="../public/index.html#mission"
-                class="smooth-scroll text-primary block px-4 py-2 text-sm hover:text-yellow-300" role="menuitem"
-                tabindex="-1" id="menu-item-4">Mission</a>
+              <a href="../public/index.html#briefHistory" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                role="menuitem" tabindex="-1" id="menu-item-0">Brief History</a>
+              <a href="../public/index.html#coreValues" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                role="menuitem" tabindex="-1" id="menu-item-1">Core Values</a>
+              <a href="../public/index.html#galleryContainer" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                role="menuitem" tabindex="-1" id="menu-item-0">Gallery</a>
+              <a href="../public/index.html#foundation" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                role="menuitem" tabindex="-1" id="menu-item-2">Foundation</a>
+              <a href="../public/index.html#vision" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                role="menuitem" tabindex="-1" id="menu-item-3">Vision</a>
+              <a href="../public/index.html#mission" class="smooth-scroll text-primary block px-4 py-2 text-sm"
+                role="menuitem" tabindex="-1" id="menu-item-4">Mission</a>
             </div>
           </div>
         </div>
         <!--Dropdown About us-->
-        <a class="smooth-scroll hover:text-yellow-300" href="../public/index.html#services">Services</a>
-        <a class="hover:text-yellow-300" href="community.html">Community</a>
-        <a class="hover:text-yellow-300" href="careers.html">Careers</a>
+        <a class="smooth-scroll" href="../public/index.html#services">Services</a>
+        <a class="" href="community.html">Community</a>
+        <a class="" href="careers.html">Careers</a>
       </div>
     </div>
     <div
-      class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:hidden || xxl:hidden">
+      class="svgContainer absolute right-0 top-0 z-0 mx-auto my-auto w-8/12 || xxs:hidden || sm:hidden || md:hidden || xxl:hidden  ">
       <img src="assets/images/svg/heroSvg.svg" alt="svgHero">
     </div>
     </div>
@@ -104,8 +96,8 @@
                 About us
               </a>
             </div>
-            <div id="submenu2" class="origin-top-right relative mt-2 w-full z-40 rounded-md bg-white shadow-inner 
-             ring-1 ring-black ring-opacity-5 focus:outline-none menu-item mx-auto || xxs:mx-auto xxs:w-full
+            <div id="submenu2" class="origin-top-right relative mt-2 w-full z-50 rounded-md bg-white shadow-inner 
+           ring-1 ring-black ring-opacity-5 focus:outline-none menu-item mx-auto || xxs:mx-auto xxs:w-full
              xxs:hidden sm:mx-auto sm:hidden md:hidden" role="menu" aria-orientation="vertical"
               aria-labelledby="menu-button2" tabindex="-1">
               <div class="xxs:mx-auto" role="none">
@@ -144,6 +136,44 @@
     </div>
     <!--end Navlink xxs + sm + md -->
   </nav>
+
+  <!--Sidebutton-->
+  <div id="arrowNav" class="sidenav fixed hidden pt-2 top-20 z-50 wow">
+    <div
+      class="border w-12 bg-opacity-25 flex bg-primary p-1 pl-1 rounded-l-xl hover:bg-opacity-1 items-center  || xxs:w-10 || sm:w-14">
+      <i class=" fas fa-angle-double-left fa-2x text-white"></i>
+    </div>
+  </div>
+  </div>
+  <div id="arrowNavLinks" class="fixed z-50">
+    <div class="flex">
+      <div id="closeNav" class="w-10 flex bg-white pl-1 rounded-l-xl  items-center cursor-pointer shadow-md">
+        <i class="fas fa-angle-double-right fa-2x py-16 text-primary || lg:py-32 || xxl:py-24"></i>
+      </div>
+      <div class="w-96 h-96 shadow-md bg-primary p-7 pt-32 my-auto || xxs:w-44 xxs:h-44 xxs:pt-7 || sm:w-56 sm:h-56 sm:pt-12 || md:w-60 md:h-60 md:pt-14 || lg:w-72 lg:h-72 lg:pt-20 lg:text-lg ||
+         xl:w-80 xl:h-80 xl:pt-24 xl:text-lg || xxl:w-96 xxl:h-96 xxl:pt-32 xxl:bg-tertiary">
+        <div class="navContainer flex-col my-auto  text-white tracking-wider text-md cursor-pointer">
+          <div>
+            <a href="index.html">Home</a>
+          </div>
+          <div>
+            <a href="../public/index.html#aboutUs">About&nbspus</a>
+          </div>
+          <div>
+            <a href="../public/index.html#services">Services</a>
+          </div>
+          <div>
+            <a href="../public/community.html">Community</a>
+          </div>
+          <div>
+            <a href="../public/careers.html">Careers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Sidebutton-->
+
 
   <!--hero-->
   <section class=" mx-auto w-full py-10 || xxs:bg-purple-100 || lg:py-6 || xxl:bg-primary ">
@@ -215,10 +245,10 @@
   <!--Modal-->
 
   <!-- About Us -->
-  <section class="mx-auto   py-36 px-56 || xxs:px-1 xxs:py-1 || sm:p-1 || md:py-8 md:mx-auto md:px-0 
+  <section id="aboutUs" class="mx-auto py-36 px-56 || xxs:px-1 xxs:py-1 || sm:p-1 || md:py-8 md:mx-auto md:px-0 
     || lg:px-16 ">
     <div class="flex section mx-auto || xxs:flex-col-reverse xxs:p-2 xxs:space-x-0 || sm:flex-col-reverse sm:p-3 sm:space-x-0 || md:flex-col-reverse md:mx-auto 
-        || lg:space-x-8 || xl:space-x-8 || 2xl:space-x-12">
+        || lg:space-x-8 || xl:space-x-8 || xxl:space-x-12">
       <!-- column 1-->
       <div class="w-1/2 wow animate__fadeInLeft || xxs:w-full || sm:w-full || md:w-full">
         <div
@@ -238,7 +268,8 @@
         <div class="items || xxs:px-3 || sm:px-3 || md:px-10">
           <div class="flex items-center space-x-2 ">
             <img src="assets/images/about/aboutBox.svg" alt="" class="w-6">
-            <h6 class="text-2xl text-primary font-bold tracking-wide capitalize ||" id="briefHistory">Brief history</h6>
+            <h6 class="text-2xl text-primary font-bold tracking-wide capitalize ||" id="briefHistory">Brief history
+            </h6>
           </div>
           <div>
             <p
@@ -578,7 +609,7 @@
       <div class=" w-1/2 flex mx-auto pr-8 || xxs:pr-0 xxs:px-5 xxs:flex-col xxs:w-full 
        || sm:pr-0 sm:px-5 sm:flex-col sm:w-1/2 sm:pt-3
           md:w-5/12 || lg:w-10/12 xl:w-10/12">
-        <div class="w-full wow animate__fadeInLeft || md:pt-12 || lg:pt-8 || xl:pt-10 || 2xl:pt-10">
+        <div class="w-full wow animate__fadeInLeft || md:pt-12 || lg:pt-8 || xl:pt-10 || xxl:pt-10">
           <img class="flex justify-center items-center object-fit w-full" src="assets/images/svg/hr1.png"
             alt="CareerImage">
         </div>
@@ -613,30 +644,30 @@
   <!-- FooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooter -->
   <footer class="footer shadow-t-lg w-full ">
     <div class="footerContainer bg-purple-100 h-44">
-      <div class="section mx-auto px-56 flex || xxs:flex-col xxs:mx-auto xxs:p-0 xxs:w-full || sm:flex-col sm:mx-auto sm:p-0 sm:w-full
-       || md:flex-col md:mx-auto md:p-0 md:w-full || lg:flex lg:px-16 || xl:flex || 2xl:flex">
-        <div class="w-1/2 h-44 flex text-center justify-center items-center || xxs:w-full xxs:h-20 || sm:w-full sm:h-10
-         || md:w-full md:h-16 || xl:w-full">
-          <p class="text-lg italic font-semibold text-gray-900 font-poppins capitalize || xxs:text-sm || sm:text-sm  
-              || md:text-md || lg:text-md || xl:text-base">
+      <div class="section px-8 flex w-full || xxs:flex-col xxs:mx-auto xxs:p-0 xxs:w-full || sm:flex-col sm:mx-auto sm:p-0 sm:w-full
+          || md:flex-col md:mx-auto md:p-0 md:w-full || lg:flex lg:px-16 || xl:flex || xxl:flex">
+        <div class="w-1/3 h-44 flex justify-start items-center || xxs:w-full xxs:h-20 || sm:w-full sm:h-10
+           || md:w-full md:h-16 || xl:w-full">
+          <p class="text-lg italic text-center font-semibold text-gray-900 font-poppins capitalize || xxs:text-sm xxs:text-center || sm:text-sm  
+              || md:text-md ||  lg:text-lg || xl:text-lg">
             technology radical and customer
             excellence
             services</p>
         </div>
-        <div class=" xxs:bg-secondary sm:bg-secondary md:bg-secondary || md:w-full">
-          <div class="2ndWrapper w-1/2 flex || xxs:mx-auto xxs:p-0 xxs:w-full xxs:flex-col-reverse xxs:justify-center xxs:items-center || sm:mx-auto sm:w-full
-            || md:mx-auto md:p-0 md:w-full || lg:w-full || xl:w-full || 2xl:w-full">
-            <div
-              class="w-1/2 text-right text-base h-44 py-10 || xxs:text-md xxs:py-0 xxs:text-center xxs:w-full || sm:text-sm || md:text-base || lg:py-8 lg:text-sm || xl:text-sm xl:py-10 xl:w-full">
+        <div class="xxs:bg-secondary sm:bg-secondary md:bg-secondary || md:w-full">
+          <div class="2ndWrapper w-2/3 flex justify-start || xxs:mx-auto xxs:p-0 xxs:w-full xxs:flex-col-reverse xxs:justify-center xxs:items-center || sm:mx-auto sm:w-full
+             || md:mx-auto md:p-0 md:w-full || lg:w-full || xl:w-full || xxl:w-full">
+            <div class="w-1/2 text-right text-sm max-w-full h-44 py-8 flex-col space-y-2 || xxs:text-md xxs:py-0 xxs:text-center xxs:w-full || sm:text-sm || md:text-base 
+               ||lg:text-sm xl:text-sm xl:w-full">
               <p>1912 Cityland 10 Tower H.V. Dela Costa St.</p>
-              <p>Salcedo Village, Makati City, Philippines</p><br>
+              <p>Salcedo Village, Makati City, Philippines</p>
               <p>(+632) 219-29-88</p>
             </div>
             <div class="w-1/2 flex || xxs:h-20 || xl:w-full">
-              <div class="block flex-col w-1 h-24 bg-black my-10 mx-2 || xxs:my-10 xxs:hidden || sm:my-10 ">
+              <div class="block w-1 h-24 bg-black my-8 mx-2 || xxs:my-10 xxs:hidden || sm:my-10 ">
               </div>
               <div class="my-14 || xxs:py-3 xxs:my-5 || md:py-auto || xl:w-full">
-                <img class="w-60" src="assets/images/icon/traceserv.png" alt="">
+                <img class="w-96" src="assets/images/icon/traceserv.png" alt="">
               </div>
             </div>
           </div>

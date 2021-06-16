@@ -37,9 +37,33 @@ $(document).ready(() => {
          $('#submenu2').addClass('xxs:hidden sm:hidden md:hidden')
       }
    })
-   /* Dropdown */
+
+   /*sideArrow navbar */
+   let previousScroll = 0
+   $(window).on('scroll', function () {
+      let currentScroll = $(this).scrollTop()
+      if (currentScroll > 99) {
+         $('#arrowNav').removeClass('hidden')
+         $('#arrowNavLinks').removeClass('arrowNav-view')
+         /* reveal the sidenavbar*/
+      } else {
+         $('#arrowNav').addClass('hidden')
+         $('#arrowNavLinks').removeClass('arrowNav-view')
+      }
+   })
+   /*sideArrow navbar */
+   $('#arrowNav').on('click', () => {
+      $('#arrowNav').toggleClass('hidden')
+      $('#arrowNavLinks').toggleClass('arrowNav-view')
+   })
+   $('#closeNav').on('click', () => {
+      $('#arrowNavLinks').toggleClass('arrowNav-view')
+      $('#arrowNav').toggleClass('hidden')
+   })
+   /*sideArrow navbar */
+
    /* Navbar modal for business cycle */
-   $('#modalButton').on('click', (e) => {
+   $('#modalButton').on('click', () => {
       $('#businessModal').removeClass('hidden')
       $('#closeButton').on('click', () => {
          $('#businessModal').addClass('hidden')
